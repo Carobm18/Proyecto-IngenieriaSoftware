@@ -15,5 +15,6 @@
         public string Modalidad { get; set; }
 
         //comida
+        //comidax2
     }
 }
