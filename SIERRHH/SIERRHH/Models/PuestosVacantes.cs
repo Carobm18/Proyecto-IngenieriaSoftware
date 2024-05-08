@@ -11,7 +11,7 @@ namespace SIERRHH.Models
 
         public int IdSector { get; set; }
 
-        public string Estdado { get; set; }
+        public string Estado { get; set; }
 
         public DateTime FechaPublicacion { get; set; }
 
