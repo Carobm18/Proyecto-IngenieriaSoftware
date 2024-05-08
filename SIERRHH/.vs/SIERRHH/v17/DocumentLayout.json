@@ -82,8 +82,7 @@
               "RelativeToolTip": "SIERRHH\\Controllers\\PuestosDesempenadosController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T05:38:54.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T05:38:54.399Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "SIERRHH\\Models\\PuestosDesempenados.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T05:15:52.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T05:15:52.033Z"
             },
             {
               "$type": "Document",
@@ -106,7 +104,7 @@
               "RelativeDocumentMoniker": "SIERRHH\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "SIERRHH\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAcwCAAAAB8AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwCAAAAB8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-08T05:02:54.817Z",
               "EditorCaption": ""
@@ -121,8 +119,7 @@
               "RelativeToolTip": "SIERRHH\\Models\\AppBdContext.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAA1wBwAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T05:00:32.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T05:00:32.207Z"
             },
             {
               "$type": "Document",
@@ -134,8 +131,7 @@
               "RelativeToolTip": "SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T04:59:14.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T04:59:14.058Z"
             },
             {
               "$type": "Document",
@@ -147,8 +143,7 @@
               "RelativeToolTip": "SIERRHH\\Models\\UsuarioEmpleado.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T04:49:47.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T04:49:47.192Z"
             },
             {
               "$type": "Document",
@@ -160,8 +155,7 @@
               "RelativeToolTip": "SIERRHH\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T20:50:27.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T20:50:27.317Z"
             }
           ]
         },
