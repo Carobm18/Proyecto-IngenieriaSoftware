@@ -13,6 +13,6 @@ namespace SIERRHH.Models
 
         public string Empresa { get; set; }
 
-        public int Tiempo { get; set; }
+        public string Tiempo { get; set; }
     }
 }
