@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Se habilita el string de conexion
+builder.Services.AddDbContext<SIERRHH.Models.AppBdContext>(
+ options => options.UseSqlServer(builder.Configuration.GetConnectionString("Stringconexion")));
+
+
 
 var app = builder.Build();
 
