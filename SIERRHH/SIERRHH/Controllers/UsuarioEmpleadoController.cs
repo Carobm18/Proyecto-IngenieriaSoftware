@@ -152,5 +152,12 @@ namespace SIERRHH.Controllers
         {
             return _context.UsuarioEmpleado.Any(e => e.IdEmpleado == id);
         }
+
+        // Parte del login
+
+        public IActionResult Login()
+        {
+            return View();
+        }
     }
 }
