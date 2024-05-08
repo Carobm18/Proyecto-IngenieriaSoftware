@@ -13,5 +13,7 @@
         public DateTime FechaPublicacion { get; set; }
 
         public string Modalidad { get; set; }
+
+        //comida
     }
 }
