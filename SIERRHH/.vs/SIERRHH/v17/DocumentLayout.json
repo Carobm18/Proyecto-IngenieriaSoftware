@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
+  "WorkspaceRootPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\models\\puestosvacantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\models\\puestosvacantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\models\\puestosvacantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,6 +30,14 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
@@ -42,25 +50,17 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{f5cd1b51-c771-5648-966f-646d419b1e7c}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PuestosVacantes.cs",
-              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\PuestosVacantes.cs",
+              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\PuestosVacantes.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Models\\PuestosVacantes.cs",
-              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\PuestosVacantes.cs",
+              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\PuestosVacantes.cs",
               "RelativeToolTip": "SIERRHH\\Models\\PuestosVacantes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T03:14:14.128Z",
               "EditorCaption": ""
@@ -69,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\HomeController.cs",
               "RelativeToolTip": "SIERRHH\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
