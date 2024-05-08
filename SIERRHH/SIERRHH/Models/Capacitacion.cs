@@ -7,7 +7,7 @@ namespace SIERRHH.Models
         [Key]
         public int IdCapacitacion { get; set; }
 
-        public int IdeEmpleado { get; set; }
+        public int IdEmpleado { get; set; }
 
         public string NombreCapacitacion { get; set; }
 
@@ -15,7 +15,7 @@ namespace SIERRHH.Models
 
         public int Year { get; set; }
 
-        public int Estado { get; set; }
+        public string Estado { get; set; }
 
 
     }

@@ -1,0 +1,48 @@
+﻿@model SIERRHH.Models.Certificacion
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Certificacion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdEmpleado" class="control-label"></label>
+                <input asp-for="IdEmpleado" class="form-control" />
+                <span asp-validation-for="IdEmpleado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NombreCertificacion" class="control-label"></label>
+                <input asp-for="NombreCertificacion" class="form-control" />
+                <span asp-validation-for="NombreCertificacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Entidad" class="control-label"></label>
+                <input asp-for="Entidad" class="form-control" />
+                <span asp-validation-for="Entidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdSector" class="control-label"></label>
+                <input asp-for="IdSector" class="form-control" />
+                <span asp-validation-for="IdSector" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

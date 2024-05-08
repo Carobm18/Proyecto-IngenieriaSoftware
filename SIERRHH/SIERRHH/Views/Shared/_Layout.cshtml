@@ -25,14 +25,41 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="UsuarioEmpleado" asp-action="Index">Usuario Empleados</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Acciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="UsuarioEmpleado" asp-action="Index">Usuario Empleados</a>
+                                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="PuestosDesempenados" asp-action="Index">Puestos Desempeñados</a>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="PuestosDesempenados" asp-action="Index">Puestos Desempeñados</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Aptitudes" asp-action="Index">Aptitudes</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Capacitacion" asp-action="Index">Capacitacion</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Certificacion" asp-action="Index">Certificacion</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Grado" asp-action="Index">Grado</a>
+                                </li>
+                            </ul>
                         </li>
+                        
+
                     </ul>
+                    
                 </div>
             </div>
         </nav>
