@@ -13,5 +13,6 @@ namespace SIERRHH.Models
         public string Rol { get; set; }
 
         public string Estado { get; set; }
+
     }
 }
