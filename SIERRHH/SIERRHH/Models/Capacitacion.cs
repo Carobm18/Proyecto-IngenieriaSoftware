@@ -1,8 +1,10 @@
-﻿namespace SIERRHH.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SIERRHH.Models
 {
     public class Capacitacion
     {
-
+        [Key]
         public int IdCapacitacion { get; set; }
 
         public int IdeEmpleado { get; set; }

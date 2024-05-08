@@ -1,7 +1,10 @@
-﻿namespace SIERRHH.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SIERRHH.Models
 {
     public class Certificacion
     {
+        [Key]
         public int IdCertificado { get; set; }
 
         public int IdEmpleado { get; set; }

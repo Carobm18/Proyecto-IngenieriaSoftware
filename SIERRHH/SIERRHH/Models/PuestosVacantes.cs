@@ -1,7 +1,10 @@
-﻿namespace SIERRHH.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SIERRHH.Models
 {
     public class PuestosVacantes
     {
+        [Key]
         public int IdPuesto { get; set; }
 
         public string Descripcion { get; set; }

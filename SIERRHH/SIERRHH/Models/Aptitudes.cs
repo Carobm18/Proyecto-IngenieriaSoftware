@@ -1,8 +1,12 @@
-﻿namespace SIERRHH.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SIERRHH.Models
 {
     public class Aptitudes
     {
-        public int IdAptitudes { get; set; }
+
+        [Key]
+        public int IdAptitud { get; set; }
 
         public string Descripcion { get; set; }
 
