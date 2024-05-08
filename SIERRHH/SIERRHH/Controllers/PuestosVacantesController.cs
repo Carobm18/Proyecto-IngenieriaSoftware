@@ -15,7 +15,7 @@ namespace SIERRHH.Controllers
 
         public PuestosVacantesController(AppBdContext context)
         {
-            _context = context;
+            _context = context; 
         }
 
         // GET: PuestosVacantes
