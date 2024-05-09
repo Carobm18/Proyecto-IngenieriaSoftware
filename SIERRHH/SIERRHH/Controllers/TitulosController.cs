@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -45,7 +46,31 @@ namespace SIERRHH.Controllers
         // GET: Titulos/Create
         public IActionResult Create()
         {
-            return View();
+            int idEmpleado = ObtenerIdEmpleadoAutenticado();
+
+            // Crea una nueva instancia de PuestosDesempenados con el IdEmpleado asignado
+            var titulos = new Titulos
+            {
+                IdEmpleado = idEmpleado
+            };
+            ViewBag.Sectores = _context.Sector.ToList();
+            ViewBag.Grados = _context.Grado.ToList();
+
+            return View(titulos);
+        }
+
+        private int ObtenerIdEmpleadoAutenticado()
+        {
+            // Aquí puedes acceder al IdEmpleado desde las reclamaciones (claims) del usuario autenticado
+            var claimsIdentity = (ClaimsIdentity)HttpContext.User.Identity;
+            var idEmpleadoClaim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (idEmpleadoClaim != null && int.TryParse(idEmpleadoClaim.Value, out int idEmpleado))
+            {
+                return idEmpleado;
+            }
+
+            return 0; // Valor por defecto si no se puede obtener el IdEmpleado
         }
 
         // POST: Titulos/Create
@@ -77,6 +102,8 @@ namespace SIERRHH.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Sectores = _context.Sector.ToList();
+            ViewBag.Grados = _context.Grado.ToList();
             return View(titulos);
         }
 

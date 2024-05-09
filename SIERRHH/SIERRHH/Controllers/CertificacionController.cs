@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -45,7 +46,30 @@ namespace SIERRHH.Controllers
         // GET: Certificacion/Create
         public IActionResult Create()
         {
-            return View();
+            int idEmpleado = ObtenerIdEmpleadoAutenticado();
+
+            // Crea una nueva instancia de PuestosDesempenados con el IdEmpleado asignado
+            var certificacion = new Certificacion
+            {
+                IdEmpleado = idEmpleado
+            };
+            ViewBag.Sectores = _context.Sector.ToList();
+
+            return View(certificacion);
+        }
+
+        private int ObtenerIdEmpleadoAutenticado()
+        {
+            // Aquí puedes acceder al IdEmpleado desde las reclamaciones (claims) del usuario autenticado
+            var claimsIdentity = (ClaimsIdentity)HttpContext.User.Identity;
+            var idEmpleadoClaim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (idEmpleadoClaim != null && int.TryParse(idEmpleadoClaim.Value, out int idEmpleado))
+            {
+                return idEmpleado;
+            }
+
+            return 0; // Valor por defecto si no se puede obtener el IdEmpleado
         }
 
         // POST: Certificacion/Create
@@ -77,6 +101,7 @@ namespace SIERRHH.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Sectores = _context.Sector.ToList();
             return View(certificacion);
         }
 

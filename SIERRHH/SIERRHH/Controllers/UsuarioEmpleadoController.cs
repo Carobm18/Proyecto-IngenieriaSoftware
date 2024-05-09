@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -159,5 +161,98 @@ namespace SIERRHH.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult Login([Bind] UsuarioEmpleado user)
+        {
+
+            //se utiliza el metodo para validar  los datos del usuario
+            var temp = this.ValidarUsuario(user);
+
+
+            //Se valida si hay datos
+            if (temp != null)
+            {
+                //Declaracion de variable
+                bool restablecer = false;
+
+                //Verifica si el usuario necesita restablecer
+                restablecer = this.VerificarRestablecer(temp);
+                //Si el valor es true, es el primer inico de session, entonces debe restablecer la contraseña
+                if (restablecer)
+                {
+                    //ojo enviamos un parametro al metodo restablecer
+                    return RedirectToAction("Restablecer", "UsuarioEmpleado", new { Email = temp.Correo });
+                }
+                else
+                {
+                    //se crea la instancia para la entidad del usuario y el tipo de autenticacion
+                    var userClaims = new List<Claim>() { 
+                        new Claim(ClaimTypes.Name, temp.Correo),
+                         new Claim(ClaimTypes.NameIdentifier, temp.IdEmpleado.ToString())
+                    };
+                    var grandmaIdentity = new ClaimsIdentity(userClaims, "User Identity");
+                    var userPrincipal = new ClaimsPrincipal(new[] { grandmaIdentity });
+
+                    //Se realiza la autenticacion dentro del contexto 
+                    HttpContext.SignInAsync(userPrincipal);
+
+                    //Se ubica ala usuario en la pagina inicio
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            TempData["Mensaje"] = "Error el correo o contraseña son incorrectos ..";
+            return View(user);
+
+        }
+
+        private UsuarioEmpleado ValidarUsuario(UsuarioEmpleado temp)
+        {
+            UsuarioEmpleado autorizado = null;
+
+            //Se busca al usuario en la bD
+            var user = _context.UsuarioEmpleado.FirstOrDefault(u => u.Correo == temp.Correo);
+
+            if (user != null)
+            {
+                if (user.Password.Equals(temp.Password))
+                {
+                    autorizado = user;
+                }
+            }
+            return autorizado;
+
+
+        }
+
+        private bool VerificarRestablecer(UsuarioEmpleado temp)
+        {
+            bool verificado = false;
+
+            //consultar los datos del usuario
+            var user = _context.UsuarioEmpleado.First(u => u.Correo == temp.Correo);
+
+            if (user != null)
+            {// si restablecer esta en 0 quiere decir que es la primera vez que inicia sesion y debe cambiar la clave
+                if (user.Estado == "Nuevo")
+                {
+                    verificado = true;
+                }
+            }
+
+            return verificado;
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+
+            return RedirectToAction("Index", "Home");
+        }
+
+
     }
 }

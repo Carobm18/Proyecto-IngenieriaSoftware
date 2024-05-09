@@ -70,6 +70,26 @@
                         
 
                     </ul>
+                    <ul class="navbar-nav">
+                        @*        menu de seguridad*@
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <liv class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Hola @User.Identity.Name</a>
+                            </liv>
+
+                            <liv class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="UsuarioEmpleado" asp-action="Logout">Cerrar sesión</a>
+                            </liv>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="UsuarioEmpleado" asp-action="Login">Iniciar sesion</a>
+                            </li>
+                        }
+
+                    </ul>
                     
                 </div>
             </div>

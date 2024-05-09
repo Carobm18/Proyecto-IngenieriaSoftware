@@ -19,8 +19,14 @@
                 <span asp-validation-for="Descripcion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdSector" class="control-label"></label>
-                <input asp-for="IdSector" class="form-control" />
+                <label asp-for="IdSector" class="control-label">Sector</label>
+                <select asp-for="IdSector" class="form-control">
+                    <option value="">Seleccione un sector...</option>
+                    @foreach (var sector in ViewBag.Sectores)
+                    {
+                        <option value="@sector.IdSector">@sector.NombreSector</option>
+                    }
+                </select>
                 <span asp-validation-for="IdSector" class="text-danger"></span>
             </div>
             <div class="form-group">

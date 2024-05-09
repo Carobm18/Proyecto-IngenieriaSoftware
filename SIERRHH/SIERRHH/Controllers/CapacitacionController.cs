@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -45,7 +46,29 @@ namespace SIERRHH.Controllers
         // GET: Capacitacion/Create
         public IActionResult Create()
         {
-            return View();
+            int idEmpleado = ObtenerIdEmpleadoAutenticado();
+
+            // Crea una nueva instancia de PuestosDesempenados con el IdEmpleado asignado
+            var capacitacion = new Capacitacion
+            {
+                IdEmpleado = idEmpleado
+            };
+
+            return View(capacitacion);
+        }
+
+        private int ObtenerIdEmpleadoAutenticado()
+        {
+            // Aquí puedes acceder al IdEmpleado desde las reclamaciones (claims) del usuario autenticado
+            var claimsIdentity = (ClaimsIdentity)HttpContext.User.Identity;
+            var idEmpleadoClaim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (idEmpleadoClaim != null && int.TryParse(idEmpleadoClaim.Value, out int idEmpleado))
+            {
+                return idEmpleado;
+            }
+
+            return 0; // Valor por defecto si no se puede obtener el IdEmpleado
         }
 
         // POST: Capacitacion/Create

@@ -45,6 +45,7 @@ namespace SIERRHH.Controllers
         // GET: PuestosVacantes/Create
         public IActionResult Create()
         {
+            ViewBag.Sectores = _context.Sector.ToList();
             return View();
         }
 
@@ -77,6 +78,7 @@ namespace SIERRHH.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Sectores = _context.Sector.ToList();
             return View(puestosVacantes);
         }
 
