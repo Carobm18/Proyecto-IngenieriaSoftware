@@ -154,5 +154,11 @@ namespace SIERRHH.Controllers
         {
             return _context.PuestosVacantes.Any(e => e.IdPuesto == id);
         }
+
+        //ver puestos vacantes
+        public async Task<IActionResult> PuestosVacantes()
+        {
+            return View(await _context.PuestosVacantes.ToListAsync());
+        }
     }
 }
