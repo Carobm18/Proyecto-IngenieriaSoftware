@@ -25,6 +25,7 @@
                     @foreach (var sector in ViewBag.Sectores)
                     {
                         <option value="@sector.IdSector">@sector.NombreSector</option>
+
                     }
                 </select>
                 <span asp-validation-for="IdSector" class="text-danger"></span>
