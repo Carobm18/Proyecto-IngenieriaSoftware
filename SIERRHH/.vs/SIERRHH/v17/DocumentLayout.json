@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PuestosVacantes\\Edit.cshtml",
               "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PuestosVacantes\\Edit.cshtml",
               "RelativeToolTip": "SIERRHH\\Views\\PuestosVacantes\\Edit.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAABPAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-09T17:29:44.073Z",
               "EditorCaption": ""
@@ -87,8 +87,7 @@
               "RelativeToolTip": "SIERRHH\\Views\\PuestosVacantes\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-09T17:29:43.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T17:29:43.022Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "SIERRHH\\Controllers\\PuestosVacantesController.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAowFAAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:29:14.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T17:29:14.834Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "SIERRHH\\Views\\UsuarioEmpleado\\Login.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T23:53:48.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T23:53:48.158Z"
             },
             {
               "$type": "Document",
