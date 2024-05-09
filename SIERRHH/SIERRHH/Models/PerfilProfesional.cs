@@ -13,7 +13,7 @@ namespace SIERRHH.Models
 
         public string Telefono { get; set; }
 
-        public string Dirrecion { get; set; }
+        public string Direccion { get; set; }
 
         public DateTime FechaNacimiento { get; set; }
 

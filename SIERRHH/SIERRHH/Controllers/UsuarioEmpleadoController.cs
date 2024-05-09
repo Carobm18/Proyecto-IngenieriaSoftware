@@ -179,12 +179,12 @@ namespace SIERRHH.Controllers
                 bool restablecer = false;
 
                 //Verifica si el usuario necesita restablecer
-                restablecer = this.VerificarRestablecer(temp);
+                //restablecer = this.VerificarEst(temp);
                 //Si el valor es true, es el primer inico de session, entonces debe restablecer la contraseña
                 if (restablecer)
                 {
                     //ojo enviamos un parametro al metodo restablecer
-                    return RedirectToAction("Restablecer", "UsuarioEmpleado", new { Email = temp.Correo });
+                    return RedirectToAction("Create", "PerfilProfesional");
                 }
                 else
                 {
@@ -199,6 +199,14 @@ namespace SIERRHH.Controllers
                     //Se realiza la autenticacion dentro del contexto 
                     HttpContext.SignInAsync(userPrincipal);
 
+                    bool nuevo = false;
+
+                    nuevo = this.VerificarEstado(temp);
+                    if (nuevo)
+                    {
+                        return RedirectToAction("Create", "PerfilProfesional");
+                    }
+                    
                     //Se ubica ala usuario en la pagina inicio
                     return RedirectToAction("Index", "Home");
                 }
@@ -228,7 +236,7 @@ namespace SIERRHH.Controllers
 
         }
 
-        private bool VerificarRestablecer(UsuarioEmpleado temp)
+        private bool VerificarEstado(UsuarioEmpleado temp)
         {
             bool verificado = false;
 

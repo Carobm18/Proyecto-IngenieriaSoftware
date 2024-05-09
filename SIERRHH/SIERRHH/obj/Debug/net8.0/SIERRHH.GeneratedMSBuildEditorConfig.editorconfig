@@ -114,6 +114,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/PerfilProfesional/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/PerfilProfesional/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/PerfilProfesional/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/PerfilProfesional/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/PerfilProfesional/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/PerfilProfesional/MiPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcTWlQZXJmaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/PuestosDesempenados/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc0Rlc2VtcGVuYWRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
