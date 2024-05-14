@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace SIERRHH.Models
@@ -68,6 +69,15 @@ namespace SIERRHH.Models
 
 
         }
+
+        [DbFunction("dbo")]
+        public IQueryable<Aptitudes> GetListaPuestoAptitudes(int idPuesto)
+        {
+            var idPuestoParam = new SqlParameter("@idPuesto", idPuesto);
+
+            return Set<Aptitudes>().FromSqlRaw("EXEC Sp_Cns_ListaAptitudesPuestos @idPuesto", idPuestoParam);
+        }
+
 
     }
 }

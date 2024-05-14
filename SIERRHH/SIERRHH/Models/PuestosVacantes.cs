@@ -17,7 +17,8 @@ namespace SIERRHH.Models
 
         public string Modalidad { get; set; }
 
-  
+        public List<Aptitudes> listaAptitudes { get; set; }
+
 
     }
 }

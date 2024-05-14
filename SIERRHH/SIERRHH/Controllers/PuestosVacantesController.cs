@@ -39,6 +39,9 @@ namespace SIERRHH.Controllers
                 return NotFound();
             }
 
+
+            puestosVacantes.listaAptitudes = _context.GetListaPuestoAptitudes((int)id).ToList();
+
             return View(puestosVacantes);
         }
 
@@ -160,5 +163,9 @@ namespace SIERRHH.Controllers
         {
             return View(await _context.PuestosVacantes.ToListAsync());
         }
+
+
+
+
     }
 }
