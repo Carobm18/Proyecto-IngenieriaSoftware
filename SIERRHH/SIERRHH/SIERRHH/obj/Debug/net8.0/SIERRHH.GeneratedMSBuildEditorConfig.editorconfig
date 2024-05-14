@@ -17,251 +17,251 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SIERRHH
 build_property.RootNamespace = SIERRHH
-build_property.ProjectDir = C:\UCR\RepositorioInge\CopiaDiseño\SIERRHH\SIERRHH\
+build_property.ProjectDir = C:\UCR\RepositorioInge\Proyecto-IngenieriaSoftware\SIERRHH\SIERRHH\SIERRHH\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\UCR\RepositorioInge\CopiaDiseño\SIERRHH\SIERRHH
+build_property.MSBuildProjectDirectory = C:\UCR\RepositorioInge\Proyecto-IngenieriaSoftware\SIERRHH\SIERRHH\SIERRHH
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Aptitudes/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Aptitudes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXB0aXR1ZGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Aptitudes/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Aptitudes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXB0aXR1ZGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Aptitudes/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Aptitudes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXB0aXR1ZGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Aptitudes/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Aptitudes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXB0aXR1ZGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Aptitudes/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Aptitudes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXB0aXR1ZGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Capacitacion/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Capacitacion/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FwYWNpdGFjaW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Capacitacion/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Capacitacion/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FwYWNpdGFjaW9uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Capacitacion/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Capacitacion/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FwYWNpdGFjaW9uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Capacitacion/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Capacitacion/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FwYWNpdGFjaW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Capacitacion/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Capacitacion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FwYWNpdGFjaW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Certificacion/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Certificacion/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhY2lvblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Certificacion/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Certificacion/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhY2lvblxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Certificacion/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Certificacion/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhY2lvblxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Certificacion/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Certificacion/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhY2lvblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Certificacion/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Certificacion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhY2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Grado/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Grado/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Grado/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Grado/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Grado/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Grado/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Grado/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Grado/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Grado/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Grado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Home/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Home/Privacy.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PerfilProfesional/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PerfilProfesional/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PerfilProfesional/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PerfilProfesional/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PerfilProfesional/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PerfilProfesional/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PerfilProfesional/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PerfilProfesional/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PerfilProfesional/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PerfilProfesional/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PerfilProfesional/MiPerfil.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PerfilProfesional/MiPerfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsUHJvZmVzaW9uYWxcTWlQZXJmaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosDesempenados/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosDesempenados/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc0Rlc2VtcGVuYWRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosDesempenados/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosDesempenados/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc0Rlc2VtcGVuYWRvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosDesempenados/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosDesempenados/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc0Rlc2VtcGVuYWRvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosDesempenados/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosDesempenados/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc0Rlc2VtcGVuYWRvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosDesempenados/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosDesempenados/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc0Rlc2VtcGVuYWRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosVacantes/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosVacantes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc1ZhY2FudGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosVacantes/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosVacantes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc1ZhY2FudGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosVacantes/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosVacantes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc1ZhY2FudGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosVacantes/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosVacantes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc1ZhY2FudGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosVacantes/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosVacantes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc1ZhY2FudGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/PuestosVacantes/PuestosVacantes.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/PuestosVacantes/PuestosVacantes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVlc3Rvc1ZhY2FudGVzXFB1ZXN0b3NWYWNhbnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Sector/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Sector/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdG9yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Sector/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Sector/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdG9yXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Sector/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Sector/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdG9yXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Sector/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Sector/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdG9yXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Sector/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Sector/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Shared/Error.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Titulos/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Titulos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGl0dWxvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Titulos/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Titulos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGl0dWxvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Titulos/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Titulos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGl0dWxvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Titulos/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Titulos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGl0dWxvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Titulos/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Titulos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGl0dWxvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Create.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0VtcGxlYWRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Delete.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0VtcGxlYWRvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Details.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0VtcGxlYWRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Edit.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0VtcGxlYWRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Index.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0VtcGxlYWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Login.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/UsuarioEmpleado/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0VtcGxlYWRvXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/_ViewImports.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/_ViewStart.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UCR/RepositorioInge/CopiaDiseño/SIERRHH/SIERRHH/Views/Shared/_Layout.cshtml]
+[C:/UCR/RepositorioInge/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/SIERRHH/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tqapuw1p3a
