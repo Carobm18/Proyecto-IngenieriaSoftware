@@ -16,5 +16,10 @@ namespace SIERRHH.Models
         public int IdSector { get; set; }
 
         public int IdGrado { get; set; }
+
+        public string nombreSector = "";
+        public string nombreGrado = "";
+
+
     }
 }

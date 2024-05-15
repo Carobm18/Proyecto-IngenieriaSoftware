@@ -14,5 +14,7 @@ namespace SIERRHH.Models
         public string Entidad { get; set; }
 
         public int IdSector { get; set; }
+
+        public string nombreSector = "";
     }
 }

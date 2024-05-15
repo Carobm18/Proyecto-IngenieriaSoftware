@@ -19,6 +19,6 @@ namespace SIERRHH.Models
 
         public List<Aptitudes> listaAptitudes = new List<Aptitudes>();
 
-
+        public string nombreSector = "";
     }
 }

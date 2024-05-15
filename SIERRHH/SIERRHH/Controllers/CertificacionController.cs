@@ -177,5 +177,7 @@ namespace SIERRHH.Controllers
         {
             return _context.Certificacion.Any(e => e.IdCertificado == id);
         }
+
+
     }
 }

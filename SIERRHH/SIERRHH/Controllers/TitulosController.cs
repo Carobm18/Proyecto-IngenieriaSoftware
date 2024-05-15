@@ -22,7 +22,15 @@ namespace SIERRHH.Controllers
         // GET: Titulos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Titulos.ToListAsync());
+            var listaTitulos = await _context.Titulos.ToListAsync();
+            foreach (var titulos in listaTitulos)
+            {
+                titulos.nombreSector = sector(titulos.IdSector).NombreSector;
+                titulos.nombreGrado = grado(titulos.IdSector).Descripcion;
+
+            }
+
+            return View(listaTitulos);
         }
 
         // GET: Titulos/Details/5
@@ -178,6 +186,20 @@ namespace SIERRHH.Controllers
         private bool TitulosExists(int id)
         {
             return _context.Titulos.Any(e => e.IdTitulo == id);
+        }
+
+        private Sector sector(int id)
+        {
+            var sector = _context.Sector
+                 .FirstOrDefault(m => m.IdSector == id);
+            return sector;
+        }
+
+        private Grado grado(int id)
+        {
+            var grado = _context.Grado
+                 .FirstOrDefault(m => m.IdGrado == id);
+            return grado;
         }
     }
 }

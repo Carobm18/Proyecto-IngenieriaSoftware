@@ -21,7 +21,12 @@ namespace SIERRHH.Controllers
         // GET: PuestosVacantes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.PuestosVacantes.ToListAsync());
+            var listaPuestos = _context.PuestosVacantes.ToList();
+            foreach (var puesto in listaPuestos)
+            {
+                puesto.nombreSector = sector(puesto.IdSector).NombreSector;
+            }
+            return View(listaPuestos);
         }
 
         // GET: PuestosVacantes/Details/5
@@ -169,6 +174,11 @@ namespace SIERRHH.Controllers
         public async Task<IActionResult> PuestosVacantes()
         {
             var listaPuestos = listasPuestosActivos();
+            foreach (var puesto in listaPuestos)
+            {
+                puesto.nombreSector = sector(puesto.IdSector).NombreSector;
+            }
+
             return View(listaPuestos);
         }
 
@@ -179,6 +189,12 @@ namespace SIERRHH.Controllers
             return listaPuestosActivos;
         }
 
+        private Sector sector(int id)
+        {
+            var sector =  _context.Sector
+                 .FirstOrDefault(m => m.IdSector == id);
+            return sector;
+        }
 
 
     }

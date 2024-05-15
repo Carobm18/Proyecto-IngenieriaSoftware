@@ -200,13 +200,42 @@ namespace SIERRHH.Controllers
                 var puestosDesmp = listasPuestosDesemp(perfil.IdEmpleado);
 
                 perfil.listaAptitudes = aptitudes;
+               
+                foreach (var titulo in titulos)
+                {
+                    titulo.nombreSector = sector(titulo.IdSector).NombreSector;
+                    titulo.nombreGrado = grado(titulo.IdSector).Descripcion;
+
+                }
                 perfil.listaTitulos = titulos;
+
+                foreach (var certificado in certificaciones)
+                {
+                    certificado.nombreSector = sector(certificado.IdSector).NombreSector;
+                    
+
+                }
+
                 perfil.listaCertificacion = certificaciones;
                 perfil.listaCapacitaciones= capacitaciones;
                 perfil.listaPuestosDesemp = puestosDesmp;
             }
 
             return View(perfil);
+        }
+
+        private Sector sector(int id)
+        {
+            var sector = _context.Sector
+                 .FirstOrDefault(m => m.IdSector == id);
+            return sector;
+        }
+
+        private Grado grado(int id)
+        {
+            var grado = _context.Grado
+                 .FirstOrDefault(m => m.IdGrado == id);
+            return grado;
         }
 
         private List<Aptitudes> listasAptitudes(int id)

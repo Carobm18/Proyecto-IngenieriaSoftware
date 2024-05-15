@@ -30,10 +30,10 @@
                 @Html.DisplayNameFor(model => model.CentroEstudio)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdSector)
+               Sector
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdGrado)
+                Grado
             </th>
             <th></th>
         </tr>
@@ -51,10 +51,10 @@
                 @Html.DisplayFor(modelItem => item.CentroEstudio)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdSector)
+                @Html.DisplayFor(modelItem => item.nombreSector)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdGrado)
+                @Html.DisplayFor(modelItem => item.nombreGrado)
             </td>
             <td>
                     <a asp-action="Edit" class="btn-generales btn-primary" asp-route-id="@item.IdTitulo">Editar</a> 
