@@ -188,7 +188,55 @@ namespace SIERRHH.Controllers
             int idEmpleado = ObtenerIdEmpleadoAutenticado();
 
             var perfil = _context.PerfilProfesional.Find(idEmpleado);
+            if (perfil != null)
+            {
+                var aptitudes = listasAptitudes(perfil.IdEmpleado);
+
+                var titulos = listasTitulos(perfil.IdEmpleado);
+
+                var certificaciones = listasCertificacion(perfil.IdEmpleado);
+
+                var capacitaciones = listasCapacitacion(perfil.IdEmpleado);
+                var puestosDesmp = listasPuestosDesemp(perfil.IdEmpleado);
+
+                perfil.listaAptitudes = aptitudes;
+                perfil.listaTitulos = titulos;
+                perfil.listaCertificacion = certificaciones;
+                perfil.listaCapacitaciones= capacitaciones;
+                perfil.listaPuestosDesemp = puestosDesmp;
+            }
+
             return View(perfil);
+        }
+
+        private List<Aptitudes> listasAptitudes(int id)
+        {
+            var listaAptitudes = _context.Aptitudes.FromSql($"EXEC Sp_Cns_ListaAptitudesPerfil @idEmpleado={id}").ToList();
+            return listaAptitudes;
+        }
+
+        private List<Titulos> listasTitulos(int id)
+        {
+            var listaTitulos = _context.Titulos.FromSql($"EXEC Sp_Cns_ListaTitulos @idEmpleado={id}").ToList();
+            return listaTitulos;
+        }
+
+        private List<Certificacion> listasCertificacion(int id)
+        {
+            var listaCertificacion = _context.Certificacion.FromSql($"EXEC Sp_Cns_ListaCertificaciones @idEmpleado={id}").ToList();
+            return listaCertificacion;
+        }
+
+        private List<Capacitacion> listasCapacitacion(int id)
+        {
+            var listaCapacitacion = _context.Capacitacion.FromSql($"EXEC Sp_Cns_ListaCapacitacion @idEmpleado={id}").ToList();
+            return listaCapacitacion;
+        }
+
+        private List<PuestosDesempenados> listasPuestosDesemp(int id)
+        {
+            var listaPuestosDesemp = _context.PuestosDesempenados.FromSql($"EXEC Sp_Cns_ListaPuestosDesemp @idEmpleado={id}").ToList();
+            return listaPuestosDesemp;
         }
     }
 }

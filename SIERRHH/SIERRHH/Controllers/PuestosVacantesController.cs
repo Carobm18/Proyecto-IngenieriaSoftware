@@ -40,9 +40,16 @@ namespace SIERRHH.Controllers
             }
 
 
-            puestosVacantes.listaAptitudes = _context.GetListaPuestoAptitudes((int)id).ToList();
-
+            var aptitudes = listasAptitudes((int)id);
+            puestosVacantes.listaAptitudes = aptitudes;
             return View(puestosVacantes);
+        }
+
+      
+        private List<Aptitudes> listasAptitudes(int id)
+        {
+            var listaAptitudes = _context.Aptitudes.FromSql($"EXEC Sp_Cns_ListaAptitudesPuestos @idPuesto={id}").ToList();
+            return listaAptitudes;
         }
 
         // GET: PuestosVacantes/Create
@@ -63,7 +70,7 @@ namespace SIERRHH.Controllers
             {
                 _context.Add(puestosVacantes);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("PuestosVacantes", "PuestosVacantes");
             }
             return View(puestosVacantes);
         }
@@ -115,7 +122,7 @@ namespace SIERRHH.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("PuestosVacantes", "PuestosVacantes");
             }
             return View(puestosVacantes);
         }
@@ -150,7 +157,7 @@ namespace SIERRHH.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("PuestosVacantes", "PuestosVacantes");
         }
 
         private bool PuestosVacantesExists(int id)
@@ -161,9 +168,16 @@ namespace SIERRHH.Controllers
         //ver puestos vacantes
         public async Task<IActionResult> PuestosVacantes()
         {
-            return View(await _context.PuestosVacantes.ToListAsync());
+            var listaPuestos = listasPuestosActivos();
+            return View(listaPuestos);
         }
 
+
+        private List<PuestosVacantes> listasPuestosActivos()
+        {
+            var listaPuestosActivos = _context.PuestosVacantes.FromSql($"EXEC Sp_Cns_ListaPuestosActivos").ToList();
+            return listaPuestosActivos;
+        }
 
 
 

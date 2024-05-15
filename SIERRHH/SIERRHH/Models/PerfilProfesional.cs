@@ -20,5 +20,17 @@ namespace SIERRHH.Models
         public string Descripcion { get; set; }
 
         public string Foto { get; set; }
+
+        public List<Aptitudes> listaAptitudes = new List<Aptitudes>();
+
+        public List<Titulos> listaTitulos = new List<Titulos>();
+
+        public List<Certificacion> listaCertificacion = new List<Certificacion>();
+
+        public List<Capacitacion> listaCapacitaciones = new List<Capacitacion>();
+
+        public List<PuestosDesempenados> listaPuestosDesemp = new List<PuestosDesempenados>();
+
+
     }
 }

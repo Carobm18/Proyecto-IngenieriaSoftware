@@ -82,7 +82,7 @@ namespace SIERRHH.Controllers
             {
                 _context.Add(capacitacion);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("MiPerfil", "PerfilProfesional");
             }
             return View(capacitacion);
         }

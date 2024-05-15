@@ -83,7 +83,7 @@ namespace SIERRHH.Controllers
             {
                 _context.Add(certificacion);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("MiPerfil", "PerfilProfesional");
             }
             return View(certificacion);
         }
