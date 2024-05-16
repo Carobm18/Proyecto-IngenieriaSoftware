@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -15,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilprofesional\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\perfilaptitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\perfilaptitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\models\\appbdcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
@@ -87,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Certificacion\\Index.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\Certificacion\\Index.cshtml",
@@ -95,12 +95,11 @@
               "RelativeToolTip": "SIERRHH\\Views\\Certificacion\\Index.cshtml",
               "ViewState": "AQIAABsAAAAAAAAAAAAAADoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-16T01:59:31.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T01:59:31.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PerfilAptitudesController.cs",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilAptitudesController.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Controllers\\PerfilAptitudesController.cs",
@@ -108,12 +107,11 @@
               "RelativeToolTip": "SIERRHH\\Controllers\\PerfilAptitudesController.cs",
               "ViewState": "AQIAAKIAAAAAAAAAAAAgwMEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T00:24:55.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T00:24:55.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
@@ -121,31 +119,30 @@
               "RelativeToolTip": "SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
               "ViewState": "AQIAAE4AAAAAAAAAAAAAAG8AAACdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-15T23:52:01.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T23:52:01.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MiPerfil.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
               "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
               "RelativeToolTip": "SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAAAHcAAAAYAAAA",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAAHgAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-15T20:06:54.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "PerfilProfesionalController.cs",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilProfesionalController.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Controllers\\PerfilProfesionalController.cs",
               "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilProfesionalController.cs",
               "RelativeToolTip": "SIERRHH\\Controllers\\PerfilProfesionalController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwAMBAAAIAAAA",
+              "ViewState": "AQIAANoAAAAAAAAAAADwv/0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T20:03:34.528Z",
               "EditorCaption": ""
