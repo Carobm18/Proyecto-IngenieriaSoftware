@@ -139,7 +139,7 @@ namespace SIERRHH.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("MiPerfil", "PerfilProfesional");
             }
             return View(capacitacion);
         }
@@ -174,7 +174,7 @@ namespace SIERRHH.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("MiPerfil", "PerfilProfesional");
         }
 
         private bool CapacitacionExists(int id)
