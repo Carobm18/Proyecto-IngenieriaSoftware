@@ -109,7 +109,7 @@
                 <div class="card custom-card2 scrollable-section">
                     <div class="card-body">
                         <h5 class="card-title">Aptitudes</h5>
-                       
+                        <a asp-controller="PerfilAptitudes" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                         @foreach (var item in Model.listaAptitudes)
                         {
                             <li>@item.Descripcion</li>

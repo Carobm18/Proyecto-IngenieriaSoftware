@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -19,9 +20,31 @@ namespace SIERRHH.Controllers
         }
 
         // GET: PerfilAptitudes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            return View(await _context.PerfilAptitudes.ToListAsync());
+            var lista = listasAptitudesPerfil((int) id);
+            foreach (var aptitud in lista)
+            {
+                aptitud.descripcion = aptitudes(aptitud.IdAptitudes).Descripcion;
+              
+
+            }
+
+            return View(lista);
+        }
+
+        private List<PerfilAptitudes> listasAptitudesPerfil(int id)
+        {
+            var listaAptitudes = _context.PerfilAptitudes.FromSql($"EXEC Sp_Cns_ListaPuestosAptitudesPerfil @idEmpleado={id}").ToList();
+            return listaAptitudes;
+        }
+
+
+        private Aptitudes aptitudes(int id)
+        {
+            var aptitudes = _context.Aptitudes
+                 .FirstOrDefault(m => m.IdAptitud == id);
+            return aptitudes;
         }
 
         // GET: PerfilAptitudes/Details/5
@@ -50,10 +73,16 @@ namespace SIERRHH.Controllers
 
             perfilAptitudes.IdEmpleado = (int)id;
 
+            var lista = listasAptitudesEscoger(perfilAptitudes.IdEmpleado);
 
-
-            ViewBag.Aptitudes = _context.Aptitudes.ToList();
+            ViewBag.Aptitudes = lista;
             return View(perfilAptitudes);
+        }
+
+        private List<Aptitudes> listasAptitudesEscoger(int id)
+        {
+            var listaAptitudes = _context.Aptitudes.FromSql($"EXEC Sp_Cns_ListaPerfilAptitudesEscoger @idEmpleado={id}").ToList();
+            return listaAptitudes;
         }
 
         // POST: PerfilAptitudes/Create
@@ -131,31 +160,66 @@ namespace SIERRHH.Controllers
                 return NotFound();
             }
 
-            var perfilAptitudes = await _context.PerfilAptitudes
-                .FirstOrDefaultAsync(m => m.IdAptitudes == id);
-            if (perfilAptitudes == null)
+           
+          
+
+            var idIdEmpleado = ObtenerIdEmpleadoAutenticado();
+             var perfilAptitudes = obtenrPerfilAptitud(idIdEmpleado, (int)id);
+          
+            
+     
+            
+
+            if (perfilAptitudes != null)
+            {
+                _context.PerfilAptitudes.Remove(perfilAptitudes);
+            }
+            else
             {
                 return NotFound();
             }
 
-            return View(perfilAptitudes);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("MiPerfil", "PerfilProfesional");
+
+           
         }
 
         // POST: PerfilAptitudes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int idIdEmpleado, int IdAptitudes)
         {
-            var perfilAptitudes = await _context.PerfilAptitudes.FindAsync(id);
-            if (perfilAptitudes != null)
-            {
-                _context.PerfilAptitudes.Remove(perfilAptitudes);
-            }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            
+            return RedirectToAction("MiPerfil", "PerfilProfesional");
         }
 
+        private PerfilAptitudes obtenrPerfilAptitud(int idEmpleado, int idAptitudes)
+        {
+            
+             var lista = _context.PerfilAptitudes.FromSql($"EXEC Sp_Cns_obtenerPerfilAptitud @idEmpleado={idEmpleado},@idAptitud={idAptitudes}").ToList();
+            var perfilA = lista.FirstOrDefault();
+
+            
+                return perfilA;
+           
+            
+        }
+
+        private int ObtenerIdEmpleadoAutenticado()
+        {
+            // Aquí puedes acceder al IdEmpleado desde las reclamaciones (claims) del usuario autenticado
+            var claimsIdentity = (ClaimsIdentity)HttpContext.User.Identity;
+            var idEmpleadoClaim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (idEmpleadoClaim != null && int.TryParse(idEmpleadoClaim.Value, out int idEmpleado))
+            {
+                return idEmpleado;
+            }
+
+            return 0; // Valor por defecto si no se puede obtener el IdEmpleado
+        }
         private bool PerfilAptitudesExists(int id)
         {
             return _context.PerfilAptitudes.Any(e => e.IdAptitudes == id);

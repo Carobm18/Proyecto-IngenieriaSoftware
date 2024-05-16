@@ -33,6 +33,8 @@ namespace SIERRHH.Controllers
             return View(listaTitulos);
         }
 
+
+
         private List<Titulos> listasTitulos(int id)
         {
             var listaTitulos = _context.Titulos.FromSql($"EXEC Sp_Cns_ListaTitulos @idEmpleado={id}").ToList();
