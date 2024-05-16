@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {}
+    "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {}
   },
   "projects": {
-    "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {
+    "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
+        "projectUniqueName": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
         "projectName": "SIERRHH",
-        "projectPath": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
-        "packagesPath": "C:\\Users\\karin\\.nuget\\packages\\",
-        "outputPath": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\",
+        "projectPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
+        "packagesPath": "C:\\Users\\luisj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\karin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luisj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
