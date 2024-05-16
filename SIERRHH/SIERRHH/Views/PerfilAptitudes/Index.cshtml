@@ -1,0 +1,46 @@
+﻿@using System.Security.Claims
+@model IEnumerable<SIERRHH.Models.PerfilAptitudes>
+
+@{
+    ViewData["Title"] = "Index";
+
+    // Obtener el IdEmpleado del usuario autenticado
+    var userClaims = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+    int? userIdEmpleado = userClaims != null ? Convert.ToInt32(userClaims.Value) : null;
+}
+
+
+<h1>Index</h1>
+
+<p>
+  
+</p>
+<table class="table">
+    <thead>
+        <tr>
+           
+            <th>
+                Descripcion
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descripcion)
+                </td>
+               
+            <td>
+                    @if (userIdEmpleado != null && Model.Any(m => m.IdEmpleado == userIdEmpleado))
+                    {
+                        <a asp-action="Delete" class="btn-generales btn-danger" asp-route-id="@item.IdAptitudes">Eliminar</a>
+                    }
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

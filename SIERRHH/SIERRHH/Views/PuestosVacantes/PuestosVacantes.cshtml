@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SIERRHH.Models.PuestosVacantes>
+
+@{
+    ViewData["Title"] = "PuestosVacantes";
+}
+
+<h3>Puestos Vacantes Activos</h3>
+
+<p>
+    <a class="btn-generales btn-primary" asp-action="Create">Agregar un puesto vacante</a>
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <!-- Utilizamos col-md-4 para que cada tarjeta ocupe 1/3 del ancho en pantallas medianas y más grandes -->
+            <div class="card mb-3">
+                <!-- mb-3 añade un margen inferior a cada tarjeta -->
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Descripcion)</h5>
+                    <p class="card-text">
+                        <strong>Sector:</strong> @Html.DisplayFor(modelItem => item.nombreSector)<br />
+                        
+                        <strong>Estado:</strong> @Html.DisplayFor(modelItem => item.Estado)<br />
+                        <strong>Salario:</strong> 1000$ a 1500$<br />
+                        <strong>Fecha de Publicación:</strong> @Html.DisplayFor(modelItem => item.FechaPublicacion)<br />
+                        <strong>Modalidad:</strong> @Html.DisplayFor(modelItem => item.Modalidad)
+                    </p>
+                   
+                    <a asp-action="Details" asp-route-id="@item.IdPuesto" class="btn btn-primary">Detalles</a> 
+                    
+                </div>
+            </div>
+        </div>
+    }
+
+    <div style="height: 90px;"></div>
+</div>
+
