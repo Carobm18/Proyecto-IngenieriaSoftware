@@ -1,37 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
+  "WorkspaceRootPath": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\capacitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\capacitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\obj\\debug\\net8.0\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\obj\\debug\\net8.0\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\obj\\debug\\net8.0\\sierrhh.razorassemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\obj\\debug\\net8.0\\sierrhh.razorassemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\obj\\debug\\net8.0\\sierrhh.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\obj\\debug\\net8.0\\sierrhh.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\certificacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\certificacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\certificacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilprofesional\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\perfilaptitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\perfilaptitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\perfilaptitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\models\\appbdcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\ucr\\repositorioinge\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\models\\appbdcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\models\\appbdcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,14 +59,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
               "$type": "Bookmark",
@@ -74,6 +74,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{f5cd1b51-c771-5648-966f-646d419b1e7c}"
             },
             {
@@ -83,36 +87,61 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CapacitacionController.cs",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\CapacitacionController.cs",
-              "RelativeDocumentMoniker": "SIERRHH\\Controllers\\CapacitacionController.cs",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\CapacitacionController.cs",
-              "RelativeToolTip": "SIERRHH\\Controllers\\CapacitacionController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAzwI0AAABJAAAA",
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "SIERRHH\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "SIERRHH\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T03:47:48.813Z",
+              "WhenOpened": "2024-05-16T03:52:20.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "SIERRHH.RazorAssemblyInfo.cs",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\Debug\\net8.0\\SIERRHH.RazorAssemblyInfo.cs",
+              "RelativeDocumentMoniker": "SIERRHH\\obj\\Debug\\net8.0\\SIERRHH.RazorAssemblyInfo.cs",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\Debug\\net8.0\\SIERRHH.RazorAssemblyInfo.cs*",
+              "RelativeToolTip": "SIERRHH\\obj\\Debug\\net8.0\\SIERRHH.RazorAssemblyInfo.cs*",
+              "ViewState": "AQIAAAIAAAAAAAAAAAApwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T03:52:10.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SIERRHH.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\Debug\\net8.0\\SIERRHH.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "SIERRHH\\obj\\Debug\\net8.0\\SIERRHH.AssemblyInfo.cs",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\Debug\\net8.0\\SIERRHH.AssemblyInfo.cs*",
+              "RelativeToolTip": "SIERRHH\\obj\\Debug\\net8.0\\SIERRHH.AssemblyInfo.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T03:49:58.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
               "RelativeToolTip": "SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-16T01:59:39.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T01:59:39.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Certificacion\\Index.cshtml",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Certificacion\\Index.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\Certificacion\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Certificacion\\Index.cshtml",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Certificacion\\Index.cshtml",
               "RelativeToolTip": "SIERRHH\\Views\\Certificacion\\Index.cshtml",
               "ViewState": "AQIAABsAAAAAAAAAAAAAADoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -120,11 +149,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "PerfilAptitudesController.cs",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilAptitudesController.cs",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilAptitudesController.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Controllers\\PerfilAptitudesController.cs",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilAptitudesController.cs",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilAptitudesController.cs",
               "RelativeToolTip": "SIERRHH\\Controllers\\PerfilAptitudesController.cs",
               "ViewState": "AQIAAKIAAAAAAAAAAAAgwMEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -132,11 +161,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
               "RelativeToolTip": "SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
               "ViewState": "AQIAAE4AAAAAAAAAAAAAAG8AAACdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -144,37 +173,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MiPerfil.cshtml",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
               "RelativeToolTip": "SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAAAMUAAAArAAAA",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAMUAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-15T20:06:54.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PerfilProfesionalController.cs",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilProfesionalController.cs",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilProfesionalController.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Controllers\\PerfilProfesionalController.cs",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilProfesionalController.cs",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilProfesionalController.cs",
               "RelativeToolTip": "SIERRHH\\Controllers\\PerfilProfesionalController.cs",
               "ViewState": "AQIAANoAAAAAAAAAAADwv/0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T20:03:34.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T20:03:34.528Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AppBdContext.cs",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\AppBdContext.cs",
+              "DocumentMoniker": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\AppBdContext.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Models\\AppBdContext.cs",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\AppBdContext.cs",
+              "ToolTip": "C:\\UCR\\RepositorioInge\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\AppBdContext.cs",
               "RelativeToolTip": "SIERRHH\\Models\\AppBdContext.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAqwBYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
