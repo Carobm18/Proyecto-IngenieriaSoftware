@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IaL+DojlOXAeSxUX397Q4VJPA1/nJUr96fXwkC++URs=",
+  "Hash": "VSQa6Qn8+Ge4mblzQJQTuzsTmF7mmKH5u+ZccZyllko=",
   "Source": "SIERRHH",
   "BasePath": "_content/SIERRHH",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img\\ejemplofoto.jpg",
+      "SourceId": "SIERRHH",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\",
+      "BasePath": "_content/SIERRHH",
+      "RelativePath": "img/ejemplofoto.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ejemplofoto.jpg"
     },
     {
       "Identity": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img\\Fondo.jpg",

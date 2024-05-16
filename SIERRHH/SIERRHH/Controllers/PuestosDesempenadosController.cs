@@ -20,9 +20,17 @@ namespace SIERRHH.Controllers
         }
 
         // GET: PuestosDesempenados
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            return View(await _context.PuestosDesempenados.ToListAsync());
+
+            var puestosDesmp = listasPuestosDesemp((int)id);
+            return View(puestosDesmp);
+        }
+
+        private List<PuestosDesempenados> listasPuestosDesemp(int id)
+        {
+            var listaPuestosDesemp = _context.PuestosDesempenados.FromSql($"EXEC Sp_Cns_ListaPuestosDesemp @idEmpleado={id}").ToList();
+            return listaPuestosDesemp;
         }
 
         // GET: PuestosDesempenados/Details/5

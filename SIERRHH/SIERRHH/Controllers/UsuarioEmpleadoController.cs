@@ -191,7 +191,8 @@ namespace SIERRHH.Controllers
                     //se crea la instancia para la entidad del usuario y el tipo de autenticacion
                     var userClaims = new List<Claim>() { 
                         new Claim(ClaimTypes.Name, temp.Correo),
-                         new Claim(ClaimTypes.NameIdentifier, temp.IdEmpleado.ToString())
+                        new Claim(ClaimTypes.NameIdentifier, temp.IdEmpleado.ToString()),
+                        new Claim(ClaimTypes.Role, temp.Rol)
                     };
                     var grandmaIdentity = new ClaimsIdentity(userClaims, "User Identity");
                     var userPrincipal = new ClaimsPrincipal(new[] { grandmaIdentity });

@@ -1,7 +1,12 @@
-﻿@model IEnumerable<SIERRHH.Models.PuestosDesempenados>
+﻿@using System.Security.Claims
+@model IEnumerable<SIERRHH.Models.PuestosDesempenados>
 
 @{
     ViewData["Title"] = "Index";
+
+    // Obtener el IdEmpleado del usuario autenticado
+    var userClaims = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+    int? userIdEmpleado = userClaims != null ? Convert.ToInt32(userClaims.Value) : null;
 }
 
 <style>
@@ -17,14 +22,15 @@
     Puestos Desempenados
 </h3>
 <p>
-    <a asp-action="Create" class="btn-generales btn-primary">Ir a crear puestos desempeñados</a>
+    @if (userIdEmpleado != null && Model.Any(m => m.IdEmpleado == userIdEmpleado))
+    {
+        <a asp-action="Create" class="btn-generales btn-primary">Ir a crear puestos desempeñados</a>
+    }
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.IdEmpleado)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.Descripcion)
             </th>
@@ -40,9 +46,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdEmpleado)
-            </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.Descripcion)
             </td>
@@ -53,9 +57,14 @@
                 @Html.DisplayFor(modelItem => item.Tiempo)
             </td>
             <td>
-                    <a asp-action="Edit" class="btn-generales btn-primary" asp-route-id="@item.IdPuestoDesempenado">Editar</a> 
-                    <a asp-action="Details" class="btn-generales btn-success" asp-route-id="@item.IdPuestoDesempenado">Detalles</a> 
-                    <a asp-action="Delete" class="btn-generales btn-danger" asp-route-id="@item.IdPuestoDesempenado">Eliminar</a>
+                    @if (userIdEmpleado != null && Model.Any(m => m.IdEmpleado == userIdEmpleado))
+                    {
+                        <a asp-action="Edit" class="btn-generales btn-primary" asp-route-id="@item.IdPuestoDesempenado">Editar</a>
+                        <a asp-action="Details" class="btn-generales btn-success" asp-route-id="@item.IdPuestoDesempenado">Detalles</a>
+                        <a asp-action="Delete" class="btn-generales btn-danger" asp-route-id="@item.IdPuestoDesempenado">Eliminar</a>
+                    }
+
+                  
             </td>
         </tr>
 }

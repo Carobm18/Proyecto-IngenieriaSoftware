@@ -20,9 +20,29 @@ namespace SIERRHH.Controllers
         }
 
         // GET: Certificacion
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            return View(await _context.Certificacion.ToListAsync());
+            var certificaciones = listasCertificacion((int)id);
+            foreach (var certificado in certificaciones)
+            {
+                certificado.nombreSector = sector(certificado.IdSector).NombreSector;
+
+
+            }
+            return View(certificaciones);
+        }
+
+        private Sector sector(int id)
+        {
+            var sector = _context.Sector
+                 .FirstOrDefault(m => m.IdSector == id);
+            return sector;
+        }
+
+        private List<Certificacion> listasCertificacion(int id)
+        {
+            var listaCertificacion = _context.Certificacion.FromSql($"EXEC Sp_Cns_ListaCertificaciones @idEmpleado={id}").ToList();
+            return listaCertificacion;
         }
 
         // GET: Certificacion/Details/5

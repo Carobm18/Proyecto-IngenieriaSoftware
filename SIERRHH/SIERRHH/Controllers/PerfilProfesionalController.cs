@@ -22,6 +22,8 @@ namespace SIERRHH.Controllers
         // GET: PerfilProfesional
         public async Task<IActionResult> Index()
         {
+            
+
             return View(await _context.PerfilProfesional.ToListAsync());
         }
 
@@ -35,10 +37,41 @@ namespace SIERRHH.Controllers
 
             var perfilProfesional = await _context.PerfilProfesional
                 .FirstOrDefaultAsync(m => m.IdEmpleado == id);
+
             if (perfilProfesional == null)
             {
                 return NotFound();
             }
+
+            var aptitudes = listasAptitudes(perfilProfesional.IdEmpleado);
+
+            var titulos = listasTitulos(perfilProfesional.IdEmpleado);
+
+            var certificaciones = listasCertificacion(perfilProfesional.IdEmpleado);
+
+            var capacitaciones = listasCapacitacion(perfilProfesional.IdEmpleado);
+            var puestosDesmp = listasPuestosDesemp(perfilProfesional.IdEmpleado);
+
+            perfilProfesional.listaAptitudes = aptitudes;
+
+            foreach (var titulo in titulos)
+            {
+                titulo.nombreSector = sector(titulo.IdSector).NombreSector;
+                titulo.nombreGrado = grado(titulo.IdGrado).Descripcion;
+
+            }
+            perfilProfesional.listaTitulos = titulos;
+
+            foreach (var certificado in certificaciones)
+            {
+                certificado.nombreSector = sector(certificado.IdSector).NombreSector;
+
+
+            }
+
+            perfilProfesional.listaCertificacion = certificaciones;
+            perfilProfesional.listaCapacitaciones = capacitaciones;
+            perfilProfesional.listaPuestosDesemp = puestosDesmp;
 
             return View(perfilProfesional);
         }
@@ -204,7 +237,7 @@ namespace SIERRHH.Controllers
                 foreach (var titulo in titulos)
                 {
                     titulo.nombreSector = sector(titulo.IdSector).NombreSector;
-                    titulo.nombreGrado = grado(titulo.IdSector).Descripcion;
+                    titulo.nombreGrado = grado(titulo.IdGrado).Descripcion;
 
                 }
                 perfil.listaTitulos = titulos;

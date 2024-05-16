@@ -93,6 +93,10 @@
       "PackagePath": "staticwebassets\\img\\RH4.jpg"
     },
     {
+      "Id": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img\\ejemplofoto.jpg",
+      "PackagePath": "staticwebassets\\img\\ejemplofoto.jpg"
+    },
+    {
       "Id": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

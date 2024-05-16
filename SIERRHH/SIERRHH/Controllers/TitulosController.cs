@@ -20,17 +20,23 @@ namespace SIERRHH.Controllers
         }
 
         // GET: Titulos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            var listaTitulos = await _context.Titulos.ToListAsync();
+            var listaTitulos = listasTitulos((int)id);
             foreach (var titulos in listaTitulos)
             {
                 titulos.nombreSector = sector(titulos.IdSector).NombreSector;
-                titulos.nombreGrado = grado(titulos.IdSector).Descripcion;
+                titulos.nombreGrado = grado(titulos.IdGrado).Descripcion;
 
             }
 
             return View(listaTitulos);
+        }
+
+        private List<Titulos> listasTitulos(int id)
+        {
+            var listaTitulos = _context.Titulos.FromSql($"EXEC Sp_Cns_ListaTitulos @idEmpleado={id}").ToList();
+            return listaTitulos;
         }
 
         // GET: Titulos/Details/5

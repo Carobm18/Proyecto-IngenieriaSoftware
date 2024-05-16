@@ -20,11 +20,17 @@ namespace SIERRHH.Controllers
         }
 
         // GET: Capacitacion
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            return View(await _context.Capacitacion.ToListAsync());
+            var capacitaciones = listasCapacitacion((int)id);
+            return View(capacitaciones);
         }
 
+        private List<Capacitacion> listasCapacitacion(int id)
+        {
+            var listaCapacitacion = _context.Capacitacion.FromSql($"EXEC Sp_Cns_ListaCapacitacion @idEmpleado={id}").ToList();
+            return listaCapacitacion;
+        }
         // GET: Capacitacion/Details/5
         public async Task<IActionResult> Details(int? id)
         {

@@ -10,6 +10,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     }
+
+    .scrollable-section {
+        max-height: 300px; /* Ajusta esta altura según sea necesario */
+        overflow-y: auto;
+    }
+
+    .custom-card {
+        /* Ajusta el tamaño y estilo de las cartas */
+        height: 300px; /* Puedes cambiar esta altura según tus necesidades */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .custom-card2 {
+        /* Ajusta el tamaño y estilo de las cartas */
+        height: 225px; /* Puedes cambiar esta altura según tus necesidades */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 80px;
+        margin-bottom: 10px;
+    }
 </style>
 
 <div class="row">
@@ -80,23 +103,34 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-
+                <div class="card ">
+                    <div class="card-body">
+                        <h5 class="card-title">Foto Perfil</h5>
+                        <!-- Mostrar la imagen de perfil -->
+                        <center>
+                           <img src="~/img/ejemplofoto.jpg" alt="Foto de perfil" class="img-fluid rounded-circle" width="200" />
+                        </center>
+                       
+                    </div>
+                </div>
+                <div class="card custom-card2 scrollable-section">
                     <div class="card-body">
                         <h5 class="card-title">Aptitudes</h5>
+                        <a asp-controller="PerfilAptitudes" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdEmpleado">Agregar Aptitudes</a>
                         @foreach (var item in Model.listaAptitudes)
                         {
                             <li>@item.Descripcion</li>
                         }
-                        <a asp-controller="PerfilAptitudes" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdEmpleado">Agregar Aptitudes</a>
+
+                       
                     </div>
-                    
+                   
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-                 <div class="card">
+                <div class="card custom-card scrollable-section">
                     
                     <div class="card-body">
                         <h5 class="card-title">Titulos</h5>
@@ -122,13 +156,14 @@
                                     </tr>
                                 }
                                 <a asp-controller="Titulos" asp-action="Create" class="btn-generales btn-primary" >Agregar Titulo</a>
+                                <a asp-controller="Titulos" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div class="card custom-card scrollable-section">
 
                     <div class="card-body">
                         <h5 class="card-title">Puestos Desempeñados</h5>
@@ -150,13 +185,14 @@
                                     </tr>
                                 }
                                 <a asp-controller="PuestosDesempenados" asp-action="Create" class="btn-generales btn-primary">Agregar Puestos</a>
+                                <a asp-controller="PuestosDesempenados" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div class="card custom-card scrollable-section">
 
                     <div class="card-body">
                         <h5 class="card-title">Certificaciones</h5>
@@ -180,6 +216,8 @@
                                     </tr>
                                 }
                                 <a asp-controller="Certificacion" asp-action="Create" class="btn-generales btn-primary">Agregar Titulo</a>
+                                <a asp-controller="Certificacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+
                             </tbody>
                         </table>
                     </div>
@@ -187,7 +225,7 @@
             </div>
 
             <div class="col-md-3">
-                <div class="card">
+                <div class="card custom-card scrollable-section">
 
                     <div class="card-body">
                         <h5 class="card-title">Capacitaciones</h5>
@@ -209,6 +247,7 @@
                                     </tr>
                                 }
                                 <a asp-controller="Capacitacion" asp-action="Create" class="btn-generales btn-primary">Agregar Titulo</a>
+                                <a asp-controller="Capacitacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                             </tbody>
                         </table>
                     </div>
