@@ -48,7 +48,9 @@ namespace SIERRHH.Controllers
         // GET: UsuarioEmpleadoes/Create
         public IActionResult Create()
         {
-            return View();
+            UsuarioEmpleado usuario = new UsuarioEmpleado();
+            usuario.Estado = "Nuevo";
+            return View(usuario);
         }
 
         // POST: UsuarioEmpleadoes/Create
