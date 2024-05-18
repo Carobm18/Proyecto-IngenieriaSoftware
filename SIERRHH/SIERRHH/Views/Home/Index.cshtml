@@ -25,20 +25,20 @@
             
         </div>
         <div class="col-sm-4">
-            
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                    Inicio
-                </a>
-                <a asp-area="" asp-controller="UsuarioEmpleado" asp-action="Create" class="list-group-item list-group-item-action">Agregar un usuario empleado</a>
-                <a asp-area="" asp-controller="PerfilProfesional" asp-action="MiPerfil" class="list-group-item list-group-item-action">Agregar un perfil profesional</a>
-                <a asp-area="" asp-controller="Certificacion" asp-action="Create" class="list-group-item list-group-item-action">Agregar certificación</a>
-                <a asp-area="" asp-controller="Grado" asp-action="Create" class="list-group-item list-group-item-action">Agregar grado</a>
-                <a asp-area="" asp-controller="Capacitacion" asp-action="Create" class="list-group-item list-group-item-action">Agregar capacitación</a>
-                <a asp-area="" asp-controller="PuestosVacantes" asp-action="Create" class="list-group-item list-group-item-action">Agregar un puesto</a>
-                <a asp-area="" asp-controller="Titulos" asp-action="Create" class="list-group-item list-group-item-action">Agregar un titulo</a>
-               
-            </div>
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                        Inicio
+                    </a>
+                    <a asp-area="" asp-controller="UsuarioEmpleado" asp-action="Create" class="list-group-item list-group-item-action">Agregar un usuario empleado</a>
+
+                    <a asp-area="" asp-controller="PuestosVacantes" asp-action="Create" class="list-group-item list-group-item-action">Agregar un puesto</a>
+
+
+                </div>
+            }
+           
 
         </div>
     </div>

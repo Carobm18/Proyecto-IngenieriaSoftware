@@ -128,6 +128,7 @@ namespace SIERRHH.Controllers
                 {
                     _context.Update(puestosDesempenados);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction("MiPerfil", "PerfilProfesional");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -140,7 +141,7 @@ namespace SIERRHH.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                
             }
             return View(puestosDesempenados);
         }
@@ -159,8 +160,10 @@ namespace SIERRHH.Controllers
             {
                 return NotFound();
             }
+            _context.PuestosDesempenados.Remove(puestosDesempenados);
+            await _context.SaveChangesAsync();
 
-            return View(puestosDesempenados);
+            return RedirectToAction("MiPerfil", "PerfilProfesional");
         }
 
         // POST: PuestosDesempenados/Delete/5
@@ -171,10 +174,10 @@ namespace SIERRHH.Controllers
             var puestosDesempenados = await _context.PuestosDesempenados.FindAsync(id);
             if (puestosDesempenados != null)
             {
-                _context.PuestosDesempenados.Remove(puestosDesempenados);
+               
             }
 
-            await _context.SaveChangesAsync();
+            
             return RedirectToAction(nameof(Index));
         }
 

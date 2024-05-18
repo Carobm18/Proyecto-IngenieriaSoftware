@@ -143,6 +143,7 @@ namespace SIERRHH.Controllers
                 {
                     _context.Update(certificacion);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction("MiPerfil", "PerfilProfesional");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -155,7 +156,7 @@ namespace SIERRHH.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                
             }
             return View(certificacion);
         }
@@ -174,8 +175,9 @@ namespace SIERRHH.Controllers
             {
                 return NotFound();
             }
-
-            return View(certificacion);
+            _context.Certificacion.Remove(certificacion);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("MiPerfil", "PerfilProfesional");
         }
 
         // POST: Certificacion/Delete/5
@@ -186,10 +188,10 @@ namespace SIERRHH.Controllers
             var certificacion = await _context.Certificacion.FindAsync(id);
             if (certificacion != null)
             {
-                _context.Certificacion.Remove(certificacion);
+               
             }
 
-            await _context.SaveChangesAsync();
+           
             return RedirectToAction(nameof(Index));
         }
 

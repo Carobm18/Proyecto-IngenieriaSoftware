@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SIERRHH.Models;
+using SIERRHH.Models.constantes;
 
 namespace SIERRHH.Controllers
 {
@@ -192,7 +193,8 @@ namespace SIERRHH.Controllers
                     var userClaims = new List<Claim>() { 
                         new Claim(ClaimTypes.Name, temp.Correo),
                         new Claim(ClaimTypes.NameIdentifier, temp.IdEmpleado.ToString()),
-                        new Claim(ClaimTypes.Role, temp.Rol)
+                        new Claim(ClaimTypes.Role, temp.Rol),
+                        new Claim(CustomClaimTypes.Estado, temp.Estado)
                     };
                     var grandmaIdentity = new ClaimsIdentity(userClaims, "User Identity");
                     var userPrincipal = new ClaimsPrincipal(new[] { grandmaIdentity });

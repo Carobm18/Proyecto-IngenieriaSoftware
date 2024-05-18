@@ -21,13 +21,25 @@
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Rol" class="control-label"></label>
-                <input asp-for="Rol" class="form-control" />
+                <label asp-for="Rol" class="control-label">Rol</label>
+                <select asp-for="Rol" class="form-control">
+                    <option value="">Seleccione un Rol..</option>
+
+                    <option value="Admin">Admin</option>
+                    <option value="Empleado">Empleado</option>
+                </select>
                 <span asp-validation-for="Rol" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Estado" class="control-label"></label>
-                <input asp-for="Estado" class="form-control" />
+
+                <select asp-for="Estado" class="form-control">
+                    <option value="">Seleccione un Estado..</option>
+
+                    <option value="Nuevo">Nuevo</option>
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
             <div class="form-group">

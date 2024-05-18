@@ -158,8 +158,10 @@ namespace SIERRHH.Controllers
             {
                 return NotFound();
             }
+            _context.Capacitacion.Remove(capacitacion);
+            await _context.SaveChangesAsync();
 
-            return View(capacitacion);
+            return RedirectToAction("MiPerfil", "PerfilProfesional");
         }
 
         // POST: Capacitacion/Delete/5
@@ -170,10 +172,10 @@ namespace SIERRHH.Controllers
             var capacitacion = await _context.Capacitacion.FindAsync(id);
             if (capacitacion != null)
             {
-                _context.Capacitacion.Remove(capacitacion);
+              
             }
 
-            await _context.SaveChangesAsync();
+          
             return RedirectToAction("MiPerfil", "PerfilProfesional");
         }
 

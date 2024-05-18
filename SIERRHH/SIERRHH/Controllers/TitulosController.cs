@@ -141,6 +141,7 @@ namespace SIERRHH.Controllers
                 {
                     _context.Update(titulos);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction("MiPerfil", "PerfilProfesional");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -153,7 +154,7 @@ namespace SIERRHH.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+               
             }
             return View(titulos);
         }
@@ -173,7 +174,10 @@ namespace SIERRHH.Controllers
                 return NotFound();
             }
 
-            return View(titulos);
+            _context.Titulos.Remove(titulos);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("MiPerfil", "PerfilProfesional");
         }
 
         // POST: Titulos/Delete/5
@@ -181,13 +185,13 @@ namespace SIERRHH.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var titulos = await _context.Titulos.FindAsync(id);
-            if (titulos != null)
-            {
-                _context.Titulos.Remove(titulos);
-            }
+            //var titulos = await _context.Titulos.FindAsync(id);
+            //if (titulos != null)
+            //{
 
-            await _context.SaveChangesAsync();
+            //}
+
+
             return RedirectToAction(nameof(Index));
         }
 
