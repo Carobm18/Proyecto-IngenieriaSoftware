@@ -6,7 +6,7 @@ namespace SIERRHH.Models
     public class Concurso
     {
 
-        public int IdConcurso { get; set; }
+        public int IdConcurso = 0;
 
         [Key]
         
@@ -19,5 +19,9 @@ namespace SIERRHH.Models
         public string ExperienciaPuesto { get; set; }
 
         public int Puntaje { get; set; }
+
+        public string nombrePuesto = "";
+
+        public string nombreEmpleado = "";
     }
 }

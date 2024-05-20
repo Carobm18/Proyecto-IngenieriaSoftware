@@ -11,7 +11,7 @@
     <hr />
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-10">
                 <div class="card">
                     <div class="card-body">
                         <dl class="row">
@@ -22,10 +22,10 @@
                                 @Html.DisplayFor(model => model.Descripcion)
                             </dd>
                             <dt class="col-sm-2">
-                                @Html.DisplayNameFor(model => model.IdSector)
+                                Sector
                             </dt>
                             <dd class="col-sm-10">
-                                @Html.DisplayFor(model => model.IdSector)
+                                @Html.DisplayFor(model => model.nombreSector)
                             </dd>
                             <dt class="col-sm-2">
                                 @Html.DisplayNameFor(model => model.Estado)
@@ -47,11 +47,18 @@
                             </dd>
                             
                         </dl>
-                        <a asp-action="Edit" class="btn-generales btn-primary" asp-route-id="@Model.IdPuesto">Editar</a>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Edit" class="btn-generales btn-primary" asp-route-id="@Model.IdPuesto">Editar</a>
+                        }
+
+                        <a asp-controller="Concurso" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdPuesto">Consursar por el puesto</a>
+
+                        
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card">
                     
                     <div class="card-body">
@@ -60,7 +67,12 @@
                         {
                             <li>@item.Descripcion</li>
                         }
-                        <a asp-controller="PuestoAptitudes" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdPuesto">Agregar Aptitudes</a>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <a asp-controller="PuestoAptitudes" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdPuesto">Agregar Aptitudes</a>
+                            <a asp-controller="PuestoAptitudes" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdPuesto">Ver más</a>
+                        }
+                       
                     </div>
                 </div>
             </div>

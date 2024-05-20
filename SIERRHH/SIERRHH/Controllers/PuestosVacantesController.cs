@@ -47,6 +47,7 @@ namespace SIERRHH.Controllers
 
             var aptitudes = listasAptitudes((int)id);
             puestosVacantes.listaAptitudes = aptitudes;
+            puestosVacantes.nombreSector = sector(puestosVacantes.IdSector).NombreSector;
             return View(puestosVacantes);
         }
 

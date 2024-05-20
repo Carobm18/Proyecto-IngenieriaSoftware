@@ -1,0 +1,44 @@
+﻿@model IEnumerable<SIERRHH.Models.Concurso>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExperienciaPuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Puntaje)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombreEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExperienciaPuesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Puntaje)
+            </td>
+            <td>
+                    <a asp-controller="PerfilProfesional" asp-action="Details" asp-route-id="@item.IdEmpleado" class="btn btn-primary">Ver Perfil</a>
+                    <a asp-controller="" asp-action="Details" asp-route-id="@item.IdPuesto" class="btn btn-primary">Asignar Ganador</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

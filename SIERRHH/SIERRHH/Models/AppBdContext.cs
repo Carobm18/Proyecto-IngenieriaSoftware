@@ -22,7 +22,7 @@ namespace SIERRHH.Models
 
         public DbSet<Aptitudes> Aptitudes { get; set; }
 
-        public DbSet<Concurso> Concursos { get; set; }
+        public DbSet<Concurso> Concursos{ get; set; }
 
         public DbSet<Certificacion> Certificacion { get; set; }
 

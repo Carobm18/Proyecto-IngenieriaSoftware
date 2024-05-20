@@ -6,9 +6,12 @@
 
 <h3>Puestos Vacantes Activos</h3>
 
-<p>
-    <a class="btn-generales btn-primary" asp-action="Create">Agregar un puesto vacante</a>
-</p>
+ @if (User.IsInRole("Admin")){
+    <p>
+        <a class="btn-generales btn-primary" asp-action="Create">Agregar un puesto vacante</a>
+    </p>
+ }
+
 
 <div class="row">
     @foreach (var item in Model)

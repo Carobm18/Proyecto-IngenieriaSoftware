@@ -35,7 +35,7 @@ namespace SIERRHH.Controllers
 
         private List<PerfilAptitudes> listasAptitudesPerfil(int id)
         {
-            var listaAptitudes = _context.PerfilAptitudes.FromSql($"EXEC Sp_Cns_ListaPuestosAptitudesPerfil @idEmpleado={id}").ToList();
+            var listaAptitudes = _context.PerfilAptitudes.FromSql($"EXEC Sp_Cns_ListaAptitudesPerfil @idEmpleado={id}").ToList();
             return listaAptitudes;
         }
 
@@ -185,15 +185,7 @@ namespace SIERRHH.Controllers
            
         }
 
-        // POST: PerfilAptitudes/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int idIdEmpleado, int IdAptitudes)
-        {
-
-            
-            return RedirectToAction("MiPerfil", "PerfilProfesional");
-        }
+     
 
         private PerfilAptitudes obtenrPerfilAptitud(int idEmpleado, int idAptitudes)
         {

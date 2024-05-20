@@ -5,5 +5,7 @@
         public int IdAptitudes { get; set; }
 
         public int IdPuesto { get; set; }
+
+        public string descripcion = "";
     }
 }

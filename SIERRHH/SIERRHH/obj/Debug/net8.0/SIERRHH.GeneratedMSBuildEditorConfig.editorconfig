@@ -86,6 +86,38 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhY2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Concurso/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Concurso/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Concurso/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Concurso/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Concurso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Concurso/RegistroCorrecto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cUmVnaXN0cm9Db3JyZWN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Concurso/RequisistosInvalidos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cUmVxdWlzaXN0b3NJbnZhbGlkb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Concurso/YaConcursado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cWWFDb25jdXJzYWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Grado/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

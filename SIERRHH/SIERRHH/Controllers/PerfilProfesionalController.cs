@@ -274,7 +274,7 @@ namespace SIERRHH.Controllers
 
         private List<Aptitudes> listasAptitudes(int id)
         {
-            var listaAptitudes = _context.Aptitudes.FromSql($"EXEC Sp_Cns_ListaAptitudesPerfil @idEmpleado={id}").ToList();
+            var listaAptitudes = _context.Aptitudes.FromSql($"EXEC Sp_Cns_ListaPerfilAptitudes @idEmpleado={id}").ToList();
             return listaAptitudes;
         }
 
