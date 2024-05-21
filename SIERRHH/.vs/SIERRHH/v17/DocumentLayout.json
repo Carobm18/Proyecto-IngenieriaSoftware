@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\tituloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\tituloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\concurso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\concurso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\puestosvacantes\\puestosvacantes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\puestosvacantes\\puestosvacantes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\tituloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\tituloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\models\\appbdcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PuestosVacantes\\Index.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PuestosVacantes\\Index.cshtml",
@@ -90,38 +90,37 @@
               "RelativeToolTip": "SIERRHH\\Views\\PuestosVacantes\\Index.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAAEgAAAClAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-20T05:38:48.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T05:38:48.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Concurso\\Index.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\Concurso\\Index.cshtml",
               "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Concurso\\Index.cshtml",
               "RelativeToolTip": "SIERRHH\\Views\\Concurso\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAQAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-20T05:34:03.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "TitulosController.cs",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\TitulosController.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Controllers\\TitulosController.cs",
               "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\TitulosController.cs",
               "RelativeToolTip": "SIERRHH\\Controllers\\TitulosController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAA2AAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwCwAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T05:23:18.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ConcursoController.cs",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\ConcursoController.cs",
               "RelativeDocumentMoniker": "SIERRHH\\Controllers\\ConcursoController.cs",
@@ -129,8 +128,7 @@
               "RelativeToolTip": "SIERRHH\\Controllers\\ConcursoController.cs",
               "ViewState": "AQIAAGsAAAAAAAAAAAAxwIcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T05:22:50.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T05:22:50.048Z"
             },
             {
               "$type": "Document",
@@ -142,12 +140,11 @@
               "RelativeToolTip": "SIERRHH\\Controllers\\PerfilProfesionalController.cs",
               "ViewState": "AQIAAOYAAAAAAAAAAAAIwPUAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T23:55:44.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T23:55:44.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PuestosVacantes.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PuestosVacantes\\PuestosVacantes.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PuestosVacantes\\PuestosVacantes.cshtml",
@@ -155,8 +152,7 @@
               "RelativeToolTip": "SIERRHH\\Views\\PuestosVacantes\\PuestosVacantes.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-19T23:46:10.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T23:46:10.749Z"
             },
             {
               "$type": "Document",
@@ -168,12 +164,11 @@
               "RelativeToolTip": "SIERRHH\\Models\\AppBdContext.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAcwBgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T04:58:36.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T04:58:36.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\Shared\\_Layout.cshtml",
@@ -181,8 +176,7 @@
               "RelativeToolTip": "SIERRHH\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAABsAAAAAAAAAAAAAADMAAAB0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-19T23:46:07.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T23:46:07.07Z"
             },
             {
               "$type": "Document",
@@ -194,8 +188,7 @@
               "RelativeToolTip": "SIERRHH\\Views\\Concurso\\RequisistosInvalidos.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-20T03:57:30.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T03:57:30.028Z"
             }
           ]
         },
