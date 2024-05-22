@@ -36,7 +36,9 @@
             </td>
             <td>
                     <a asp-controller="PerfilProfesional" asp-action="Details" asp-route-id="@item.IdEmpleado" class="btn btn-primary">Ver Perfil</a>
-                    <a asp-controller="" asp-action="Details" asp-route-id="@item.IdPuesto" class="btn btn-primary">Asignar Ganador</a>
+                    <a asp-controller="GanadorConcurso" asp-action="Create" asp-route-id="@item.IdPuesto" class="btn btn-primary" asp-route-name="@item.IdEmpleado">Asignar Ganador</a>
+
+                   
             </td>
         </tr>
 }

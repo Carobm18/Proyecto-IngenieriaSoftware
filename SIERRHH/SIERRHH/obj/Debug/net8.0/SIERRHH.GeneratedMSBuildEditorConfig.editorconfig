@@ -118,6 +118,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY3Vyc29cWWFDb25jdXJzYWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/GanadorConcurso/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FuYWRvckNvbmN1cnNvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/GanadorConcurso/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FuYWRvckNvbmN1cnNvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/GanadorConcurso/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FuYWRvckNvbmN1cnNvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/luisj/RepositorioIngenieria/Proyecto-IngenieriaSoftware/SIERRHH/SIERRHH/Views/Grado/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
