@@ -1,7 +1,7 @@
 ﻿@model SIERRHH.Models.PerfilProfesional
 
 @{
-    ViewData["Title"] = "MiPerfil";
+    ViewData["Title"] = "Details";
 }
 <style>
     body {
@@ -24,25 +24,17 @@
         margin-bottom: 20px;
     }
 
-    .custom-card2 {
-        /* Ajusta el tamaño y estilo de las cartas */
-        height: 225px; /* Puedes cambiar esta altura según tus necesidades */
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 80px;
-        margin-bottom: 10px;
-    }
 </style>
 
 <div class="row">
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <div class="col">
                     <div class="card">
                         <div class="card-header">
-                            <center><h3>Mi perfil profesional</h3></center>
+                            <h3>Perfil Profesional</h3>
                         </div>
                         <div class="card-body">
                             <form asp-action="MiPerfil">
@@ -81,35 +73,45 @@
                                         <span asp-validation-for="Descripcion" class="text-danger"></span>
                                     </div>
                                     <div class="form-group mb-2">
-                                        <label asp-for="Direccion" class="control-label">Dirección</label>
+                                        <label asp-for="Direccion" class="control-label">Dirección de domicilio</label>
                                         <input asp-for="Direccion" class="form-control" readonly />
                                         <span asp-validation-for="Direccion" class="text-danger"></span>
                                     </div>
-                                    
+
                                 </div>
 
                             </form>
 
-                           
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card ">
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-header">
+                        <center>
+                            Foto de usuario
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Foto Perfil</h5>
-                        <!-- Mostrar la imagen de perfil -->
+
                         <center>
                             <img src="~/img/ejemplofoto.jpg" alt="Foto de perfil" class="img-fluid rounded-circle" width="200" />
                         </center>
 
                     </div>
                 </div>
-                <div class="card custom-card2 scrollable-section">
+
+            </div>
+            <div class="col-md">
+                <div class="card custom-card scrollable-section">
+                    <div class="card-header">
+                        <center>
+                            Aptitudes
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Aptitudes</h5>
-                        <a asp-controller="PerfilAptitudes" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+                        <a asp-controller="PerfilAptitudes" asp-action="Index" class="btn-generales btn-success mt-3" asp-route-id="@Model.IdEmpleado">Ver más</a>
                         @foreach (var item in Model.listaAptitudes)
                         {
                             <li>@item.Descripcion</li>
@@ -121,16 +123,19 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-md-3">
                 <div class="card custom-card scrollable-section">
-
+                    <div class="card-header">
+                        <center>
+                            Títulos
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Titulos</h5>
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Centro de Estudio</th>
                                     <th>Grado</th>
 
@@ -148,7 +153,7 @@
 
                                     </tr>
                                 }
-                                
+
                                 <a asp-controller="Titulos" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                             </tbody>
                         </table>
@@ -157,9 +162,12 @@
             </div>
             <div class="col-md-3">
                 <div class="card custom-card scrollable-section">
-
+                    <div class="card-header">
+                        <center>
+                            Puestos desempeñados
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Puestos Desempeñados</h5>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -177,7 +185,7 @@
                                         <td>@item.Tiempo</td>
                                     </tr>
                                 }
-                               
+
                                 <a asp-controller="PuestosDesempenados" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                             </tbody>
                         </table>
@@ -186,9 +194,12 @@
             </div>
             <div class="col-md-3">
                 <div class="card custom-card scrollable-section">
-
+                    <div class="card-header">
+                        <center>
+                            Certificaciones
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Certificaciones</h5>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -208,7 +219,7 @@
 
                                     </tr>
                                 }
-                               
+
                                 <a asp-controller="Certificacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
 
                             </tbody>
@@ -219,9 +230,12 @@
 
             <div class="col-md-3">
                 <div class="card custom-card scrollable-section">
-
+                    <div class="card-header">
+                        <center>
+                            Capacitaciones
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Capacitaciones</h5>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -239,7 +253,7 @@
                                         <td>@item.Year</td>
                                     </tr>
                                 }
-                                
+
                                 <a asp-controller="Capacitacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                             </tbody>
                         </table>

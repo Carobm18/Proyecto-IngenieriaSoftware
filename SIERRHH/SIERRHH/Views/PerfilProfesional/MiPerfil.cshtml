@@ -4,11 +4,10 @@
     ViewData["Title"] = "MiPerfil";
 }
 <style>
-    body{
-    
-    background-image: url('/img/Fondo11.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    body {
+        background-image: url('/img/Fondo11.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .scrollable-section {
@@ -25,21 +24,13 @@
         margin-bottom: 20px;
     }
 
-    .custom-card2 {
-        /* Ajusta el tamaño y estilo de las cartas */
-        height: 225px; /* Puedes cambiar esta altura según tus necesidades */
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 80px;
-        margin-bottom: 10px;
-    }
 </style>
 
 <div class="row">
-    
+
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <div class="col">
                     <div class="card">
                         <div class="card-header">
@@ -66,7 +57,7 @@
 
                                         <div class="form-group mb-2">
                                             <label asp-for="FechaNacimiento" class="control-label">Fecha de nacimiento</label>
-                                            <input asp-for="FechaNacimiento" class="form-control" />
+                                            <input asp-for="FechaNacimiento" type="date" class="form-control" />
                                             <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
                                         </div>
                                         <div class="form-group mb-2">
@@ -82,15 +73,11 @@
                                         <span asp-validation-for="Descripcion" class="text-danger"></span>
                                     </div>
                                     <div class="form-group mb-2">
-                                        <label asp-for="Direccion" class="control-label">Dirección</label>
+                                        <label asp-for="Direccion" class="control-label">Dirección de domicilio</label>
                                         <input asp-for="Direccion" class="form-control" />
                                         <span asp-validation-for="Direccion" class="text-danger"></span>
                                     </div>
-                                    <div class="form-group mb-2">
-                                        <label asp-for="Foto" class="control-label">Foto</label>
-                                        <input asp-for="Foto" type="file" class="form-control" />
-                                        <span asp-validation-for="Foto" class="text-danger"></span>
-                                    </div>
+
                                 </div>
 
                             </form>
@@ -102,47 +89,63 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card ">
-                    <div class="card-body">
-                        <h5 class="card-title">Foto Perfil</h5>
-                        <!-- Mostrar la imagen de perfil -->
-                        <center>
-                           <img src="~/img/ejemplofoto.jpg" alt="Foto de perfil" class="img-fluid rounded-circle" width="200" />
-                        </center>
-                       
-                    </div>
-                </div>
-                <div class="card custom-card2 scrollable-section">
-                    <div class="card-body">
-                        <h5 class="card-title">Aptitudes</h5>
-                        <a asp-controller="PerfilAptitudes" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdEmpleado">Agregar Aptitudes</a>
-                        <a asp-controller="PerfilAptitudes" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
-                        @foreach (var item in Model.listaAptitudes)
-                        {
-                            <li>@item.Descripcion</li>
-                        }
+            <div class="col-md">
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-header">
+                            <center>
+                                Foto de usuario
+                            </center>
+                        </div>
+                        <div class="card-body">
 
-                       
+                            <center>
+                                <img src="~/img/ejemplofoto.jpg" alt="Foto de perfil" class="img-fluid rounded-circle" width="200" />
+                            </center>
+
+                        </div>
                     </div>
-                   
+
+                </div>
+                <div class="col-md mt-3">
+                    <div class="card custom-card2 scrollable-section">
+                        <div class="card-header">
+                            <center>
+                                Aptitudes
+                            </center>
+                        </div>
+                        <div class="card-body">
+
+                            <a asp-controller="PerfilAptitudes" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdEmpleado">Agregar</a>
+                            <a asp-controller="PerfilAptitudes" asp-action="Index" class="btn-generales btn-success mt-3" asp-route-id="@Model.IdEmpleado">Ver más</a>
+                            @foreach (var item in Model.listaAptitudes)
+                            {
+                                <li>@item.Descripcion</li>
+                            }
+
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-md-3">
                 <div class="card custom-card scrollable-section">
-                    
+                    <div class="card-header">
+                        <center>
+                            Títulos
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Titulos</h5>
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Centro de Estudio</th>
                                     <th>Grado</th>
-                                   
-                                    
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -152,22 +155,27 @@
                                         <td>@item.Descripcion</td>
                                         <td>@item.CentroEstudio</td>
                                         <td>@item.nombreGrado</td>
-                                        
-                                       
+
+
                                     </tr>
                                 }
-                                <a asp-controller="Titulos" asp-action="Create" class="btn-generales btn-primary" >Agregar Titulo</a>
-                                <a asp-controller="Titulos" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+
                             </tbody>
+                            <a asp-controller="Titulos" asp-action="Create" class="btn-generales btn-primary " asp-route-id="@Model.IdEmpleado">Agregar</a>
+                            <a asp-controller="Titulos" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                         </table>
+
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card custom-card scrollable-section">
-
+                    <div class="card-header">
+                        <center>
+                            Puestos desempeñados
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Puestos Desempeñados</h5>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -185,25 +193,30 @@
                                         <td>@item.Tiempo</td>
                                     </tr>
                                 }
-                                <a asp-controller="PuestosDesempenados" asp-action="Create" class="btn-generales btn-primary">Agregar Puestos</a>
-                                <a asp-controller="PuestosDesempenados" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+
                             </tbody>
+                            <a asp-controller="PuestosDesempenados" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdEmpleado">Agregar</a>
+                            <a asp-controller="PuestosDesempenados" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                         </table>
+
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card custom-card scrollable-section">
-
+                    <div class="card-header">
+                        <center>
+                            Certificaciones
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Certificaciones</h5>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>Nombre</th>
                                     <th>Entidad</th>
                                     <th>Sector</th>
-                                    
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -213,29 +226,34 @@
                                         <td>@item.NombreCertificacion</td>
                                         <td>@item.Entidad</td>
                                         <td>@item.nombreSector</td>
-                                        
+
                                     </tr>
                                 }
-                                <a asp-controller="Certificacion" asp-action="Create" class="btn-generales btn-primary">Agregar Titulo</a>
-                                <a asp-controller="Certificacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+
 
                             </tbody>
+                            <a asp-controller="Certificacion" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdEmpleado">Agregar</a>
+                            <a asp-controller="Certificacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
                         </table>
+
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="card custom-card scrollable-section">
-
+                    <div class="card-header">
+                        <center>
+                            Capacitaciones
+                        </center>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Capacitaciones</h5>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>Nombre</th>
                                     <th>Lugar</th>
-                                    <th>Year</th>
+                                    <th>Año</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -247,17 +265,22 @@
                                         <td>@item.Year</td>
                                     </tr>
                                 }
-                                <a asp-controller="Capacitacion" asp-action="Create" class="btn-generales btn-primary">Agregar Titulo</a>
-                                <a asp-controller="Capacitacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+
                             </tbody>
+
+                            <a asp-controller="Capacitacion" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdEmpleado">Agregar</a>
+                            <a asp-controller="Capacitacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+
+
                         </table>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
     <div class="col-md"></div>
 
     <div style="height: 90px;"></div>
