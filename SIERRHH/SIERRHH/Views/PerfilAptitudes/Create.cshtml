@@ -20,7 +20,7 @@
             <div class="form-group">
                 <label asp-for="IdAptitudes" class="control-label"></label>
                 <select asp-for="IdAptitudes" class="form-control">
-                    <option value="">Selecciona una aptitud</option>
+                    <option value="0">Selecciona una aptitud</option>
                     @foreach (var aptitud in ViewBag.Aptitudes)
                     {
                         <option value="@aptitud.IdAptitud">@aptitud.Descripcion</option>

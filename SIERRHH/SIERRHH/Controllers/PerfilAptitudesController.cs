@@ -70,13 +70,34 @@ namespace SIERRHH.Controllers
         {
 
             var perfilAptitudes= new PerfilAptitudes();
+            try
+            {
+                if (id == null)
+                {
+                 
+                    throw new ArgumentNullException(nameof(id), "El id no puede ser null");
+                }
 
-            perfilAptitudes.IdEmpleado = (int)id;
+                perfilAptitudes.IdEmpleado = (int)id;
 
-            var lista = listasAptitudesEscoger(perfilAptitudes.IdEmpleado);
+                var lista = listasAptitudesEscoger(perfilAptitudes.IdEmpleado);
+                if (lista != null)
+                {
+                    ViewBag.Aptitudes = lista;
+                    return View(perfilAptitudes);
+                }
+                else
+                {
+                    throw new Exception("La lista de aptitudes es null");
+                }
+            }
+            catch (Exception ex)
+            {
+             
+                return RedirectToAction("MiPerfil", "PerfilProfesional");
+            }
 
-            ViewBag.Aptitudes = lista;
-            return View(perfilAptitudes);
+
         }
 
         private List<Aptitudes> listasAptitudesEscoger(int id)
@@ -92,13 +113,27 @@ namespace SIERRHH.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdEmpleado,IdAptitudes")] PerfilAptitudes perfilAptitudes)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(perfilAptitudes);
-                await _context.SaveChangesAsync();
+                if (perfilAptitudes.IdAptitudes == 0 || perfilAptitudes.IdEmpleado == 0)
+                {
+                    return View(perfilAptitudes);
+                }
+
+                if (ModelState.IsValid)
+                {
+                    _context.Add(perfilAptitudes);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("MiPerfil", "PerfilProfesional");
+                }
+
+                return View(perfilAptitudes);
+            }
+            catch (Exception ex)
+            {
+               
                 return RedirectToAction("MiPerfil", "PerfilProfesional");
             }
-            return View(perfilAptitudes);
         }
 
         // GET: PerfilAptitudes/Edit/5
