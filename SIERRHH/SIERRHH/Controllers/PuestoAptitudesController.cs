@@ -91,8 +91,14 @@ namespace SIERRHH.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdAptitudes,IdPuesto")] PuestoAptitudes puestoAptitudes)
         {
+            if (puestoAptitudes.IdAptitudes == 0 || puestoAptitudes.IdPuesto == 0)
+            {
+                return RedirectToAction("Details", "PuestosVacantes", new { id = puestoAptitudes.IdPuesto });
+            }
             if (ModelState.IsValid)
             {
+
+             
                 _context.Add(puestoAptitudes);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Details", "PuestosVacantes", new { id = puestoAptitudes.IdPuesto });

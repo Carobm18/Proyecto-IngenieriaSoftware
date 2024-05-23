@@ -151,7 +151,7 @@ namespace SIERRHH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdEmpleado,Nombre,Apellido,Telefono,Direcion,FechaNacimiento,Descripcion,Foto")] PerfilProfesional perfilProfesional)
+        public async Task<IActionResult> Edit(int id, [Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion,Foto")] PerfilProfesional perfilProfesional)
         {
             if (id != perfilProfesional.IdEmpleado)
             {
@@ -176,43 +176,14 @@ namespace SIERRHH.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("MiPerfil", "PerfilProfesional");
             }
             return View(perfilProfesional);
         }
 
-        // GET: PerfilProfesional/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+     
 
-            var perfilProfesional = await _context.PerfilProfesional
-                .FirstOrDefaultAsync(m => m.IdEmpleado == id);
-            if (perfilProfesional == null)
-            {
-                return NotFound();
-            }
-
-            return View(perfilProfesional);
-        }
-
-        // POST: PerfilProfesional/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var perfilProfesional = await _context.PerfilProfesional.FindAsync(id);
-            if (perfilProfesional != null)
-            {
-                _context.PerfilProfesional.Remove(perfilProfesional);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+      
 
         private bool PerfilProfesionalExists(int id)
         {
@@ -260,6 +231,8 @@ namespace SIERRHH.Controllers
 
             return View(perfil);
         }
+
+      
 
         private Sector sector(int id)
         {

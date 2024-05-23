@@ -17,6 +17,7 @@ namespace SIERRHH.Controllers
         public PerfilAptitudesController(AppBdContext context)
         {
             _context = context;
+            
         }
 
         // GET: PerfilAptitudes
@@ -72,13 +73,13 @@ namespace SIERRHH.Controllers
             var perfilAptitudes= new PerfilAptitudes();
             try
             {
-                if (id == null)
-                {
+                //if (id == null)
+                //{
                  
-                    throw new ArgumentNullException(nameof(id), "El id no puede ser null");
-                }
-
-                perfilAptitudes.IdEmpleado = (int)id;
+                //    throw new ArgumentNullException(nameof(id), "El id no puede ser null");
+                //}
+                var idEmpleado = ObtenerIdEmpleadoAutenticado();
+                perfilAptitudes.IdEmpleado = idEmpleado;
 
                 var lista = listasAptitudesEscoger(perfilAptitudes.IdEmpleado);
                 if (lista != null)
@@ -117,7 +118,7 @@ namespace SIERRHH.Controllers
             {
                 if (perfilAptitudes.IdAptitudes == 0 || perfilAptitudes.IdEmpleado == 0)
                 {
-                    return View(perfilAptitudes);
+                    return RedirectToAction("MiPerfil", "PerfilProfesional");
                 }
 
                 if (ModelState.IsValid)
@@ -182,7 +183,8 @@ namespace SIERRHH.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+
+                return RedirectToAction("MiPerfil", "PerfilProfesional");
             }
             return View(perfilAptitudes);
         }
