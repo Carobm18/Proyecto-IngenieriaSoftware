@@ -31,24 +31,26 @@
                 <span asp-validation-for="Rol" class="text-danger"></span>
             </div>
 
-            @if (Model.Estado != "Nuevo")
-            {
+           
                 <div class="form-group">
                     <label asp-for="Estado" class="control-label"></label>
-
+                @if (Model.Estado != "Nuevo")
+                {
                     <select asp-for="Estado" class="form-control">
                         <option value="">Seleccione un Estado..</option>
 
                         <option value="Activo">Activo</option>
                         <option value="Inactivo">Inactivo</option>
                     </select>
+                }
+                else
+                {
+                    <input asp-for="Estado" class="form-control" readonly />
+                }
+
                     <span asp-validation-for="Estado" class="text-danger"></span>
                 </div>
-            }
-            else
-            {
-                <input asp-for="Estado" class="form-control" readonly/>
-            }
+            
 
             
            
