@@ -1,0 +1,95 @@
+﻿@model IEnumerable<SIERRHH.Models.PerfilProfesional>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    body {
+        background-image: url('/img/Fondo15.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        .btn-generales
+    }
+
+    .botones-tabla {
+        width: 100px;
+        margin-right: 5px;
+    }
+
+   
+</style>
+
+<h5>Perfiles Profesionales</h5>
+<hr />
+
+<div class="table-wrapped">
+    <table class="table table-light table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Apellido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaNacimiento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Foto)
+                </th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Apellido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefono)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Direccion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaNacimiento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Foto)
+                    </td>
+                    <td>
+
+
+                        <a asp-action="Edit" class="btn btn-generales botones-tabla  btn-primary mb-3" asp-route-id="@item.IdEmpleado">Editar</a>
+                        <a asp-action="Details" class="btn btn-generales  botones-tabla  btn-success mb-3" asp-route-id="@item.IdEmpleado">Detalles</a>
+
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+<div style="height: 80px;"></div>

@@ -1,0 +1,49 @@
+﻿@model SIERRHH.Models.Concurso
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+
+
+<div>
+    <div class="col-md"></div>
+    <div class="col-md">
+        <div class="card">
+            <div class="card-header">
+                <h5>Detalles</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.IdConcurso)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.IdConcurso)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.ExperienciaPuesto)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.ExperienciaPuesto)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Puntaje)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Puntaje)
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-md"></div>
+    
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a class="btn btn-primary" asp-action="Index">Volver</a>
+</div>

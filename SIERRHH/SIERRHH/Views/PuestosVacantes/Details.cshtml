@@ -1,0 +1,100 @@
+﻿@model SIERRHH.Models.PuestosVacantes
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<style>
+    body {
+        background-image: url('/img/Fondo11.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+
+    
+ <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Detalles</h5>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-5">
+                                Descripción:
+                            </dt>
+                             <dd class="col-md-4">
+                                @Html.DisplayFor(model => model.Descripcion)
+                            </dd>
+                            <dt class="col-sm-5">
+                                Sector:
+                            </dt>
+                            <dd class="col-md-4">
+                                @Html.DisplayFor(model => model.nombreSector)
+                            </dd>
+                            <dt class="col-sm-5">
+                                Estado:
+                            </dt>
+                            <dd class="col-md-4">
+                                @Html.DisplayFor(model => model.Estado)
+                            </dd>
+                            <dt class="col-sm-5">
+                               Fecha de publicación:
+                            </dt>
+                             <dd class="col-md-6">
+                                @Html.DisplayFor(model => model.FechaPublicacion)
+                            </dd>
+                            <dt class="col-sm-5">
+                                Modalidad:
+                            </dt>
+                            <dd class="col-md-4">
+                                @Html.DisplayFor(model => model.Modalidad)
+                            </dd>
+
+                        </dl>
+
+                        <div class="d-flex justify-content-center mt-4">
+                            <div class=" w-50 d-flex justify-content-around">
+                                <a asp-controller="Concurso" asp-action="Create" class="btn btn-primary me-2" asp-route-id="@Model.IdPuesto">Concursar</a>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model.IdPuesto">Editar</a>
+                                }
+                            </div>
+                        </div>
+                       
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <div class="card-header">
+                    <h5>
+                        Aptitudes
+                    </h5>
+                </div>
+                    <div class="card-body">
+                        @foreach (var item in Model.listaAptitudes)
+                        {
+                            <li>@item.Descripcion</li>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+
+                    <div class="d-flex justify-content-center mt-3">
+                        <div class=" w-75 d-flex justify-content-around">
+                            <a asp-controller="PuestoAptitudes" asp-action="Create" class="btn btn-primary me-2" asp-route-id="@Model.IdPuesto">Agregar</a>
+                            <a asp-controller="PuestoAptitudes" asp-action="Index" class="btn btn-success " asp-route-id="@Model.IdPuesto">Ver más</a>
+                        </div>
+                    </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+      </div>

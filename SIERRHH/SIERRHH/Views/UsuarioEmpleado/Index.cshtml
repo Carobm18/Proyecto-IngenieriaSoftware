@@ -1,0 +1,65 @@
+﻿@model IEnumerable<SIERRHH.Models.UsuarioEmpleado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    body {
+        background-image: url('/img/Fondo15.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<h5>Usuarios registrados</h5>
+<hr/>
+
+<p>
+    <a class="btn-generales btn-primary" asp-action="Create">Ir a crear</a>
+</p>
+<div class="outer-wrapped">
+<div class="table-wrapped">
+    <table class="table table-light table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Correo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rol)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Correo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rol)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estado)
+                    </td>
+                    <td>
+
+                        <a asp-action="Edit" class="btn-generales btn-success" asp-route-id="@item.IdEmpleado">Editar</a>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+</div>
+
+<div style="height: 80px;"></div>

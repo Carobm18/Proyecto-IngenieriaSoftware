@@ -1,0 +1,60 @@
+﻿@model IEnumerable<SIERRHH.Models.Concurso>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    body {
+        background-image: url('/img/Fondo15.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+
+<h5>Concursos</h5>
+
+<hr />
+
+<div class="table-wrapped">
+    <table class="table table-light table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ExperienciaPuesto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Puntaje)
+                </th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombreEmpleado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ExperienciaPuesto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Puntaje)
+                    </td>
+                    <td>
+                        <a asp-controller="PerfilProfesional" asp-action="Details" asp-route-id="@item.IdEmpleado" class="btn-generales btn-success">Ver Perfil</a>
+                        <a asp-controller="GanadorConcurso" asp-action="Create" asp-route-id="@item.IdPuesto" class="btn-generales btn-primary" asp-route-name="@item.IdEmpleado">Asignar ganador</a>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

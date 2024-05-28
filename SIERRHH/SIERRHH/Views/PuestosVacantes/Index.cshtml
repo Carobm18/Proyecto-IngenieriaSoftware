@@ -1,0 +1,90 @@
+﻿@model IEnumerable<SIERRHH.Models.PuestosVacantes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    body {
+        background-image: url('/img/Fondo15.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+
+
+<h5>Puestos Vacantes</h5>
+<hr />
+
+
+<p>
+    <a class="btn-generales btn-primary" asp-action="Create">Ir a crear puestos vacantes</a>
+</p>
+<div class="table-wrapped">
+    <table class="table table-light table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </th>
+                <th>
+                    Sector
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaPublicacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Modalidad)
+                </th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombreSector)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaPublicacion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Modalidad)
+                    </td>
+                    <td>
+
+
+                        @if (@item.Estado == "Concluido")
+                        {
+                            <a asp-controller="GanadorConcurso" asp-action="Details" class="btn-generales btn-primary" asp-route-id="@item.IdPuesto">Ver Ganador</a>
+                            <a asp-controller="GanadorConcurso" asp-action="Delete" asp-route-id="@item.IdPuesto" class="btn-generales btn-primary">Cambiar Ganador</a>
+
+                        }
+                        else
+                        {
+                            <a asp-action="Edit" class="btn-generales btn-primary" asp-route-id="@item.IdPuesto">Editar</a>
+                            <a asp-controller="Concurso" asp-action="Index" class="btn-generales btn-primary" asp-route-id="@item.IdPuesto">Ver Concurso</a>
+                            <a asp-controller="PuestoAptitudes" asp-action="Create" class="btn-generales btn-success" asp-route-id="@item.IdPuesto">Agregar Aptitudes</a>
+                        }
+
+
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

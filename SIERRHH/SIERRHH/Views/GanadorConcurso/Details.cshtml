@@ -1,0 +1,62 @@
+﻿@model SIERRHH.Models.GanadorConcurso
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    body {
+        background-image: url('/img/Fondo11.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<h5>Ganador del Concurso</h5>
+<hr />
+
+<div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Detalles</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-5">
+                        Nombre del empleado:
+                    </dt>
+                    <dd class="col-md-7">
+                        @Html.DisplayFor(model => model.nombreEmpleado)
+                    </dd>
+
+                    <dt class="col-sm-5">
+                        Puesto:
+                    </dt>
+                    <dd class="col-md-7">
+                        @Html.DisplayFor(model => model.nombrePuesto)
+                    </dd>
+
+                    <dt class="col-sm-5">
+                        Estado:
+                    </dt>
+                    <dd class="col-md-7">
+                        @Html.DisplayFor(model => model.Estado)
+                    </dd>
+                </dl>
+
+
+
+                <div class="d-flex justify-content-center mt-4">
+                    <div class=" w-50 d-flex justify-content-around">
+                        <a asp-action="Index" class="btn btn-primary" asp-controller="PuestosVacantes">Volver</a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-md"></div>
+</div>

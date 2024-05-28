@@ -1,0 +1,42 @@
+﻿@model IEnumerable<SIERRHH.Models.PuestoAptitudes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h5>Puestos Vacantes</h5>
+
+<hr/>
+
+<a class="btn-primary btn-generales" asp-controller="" asp-action="">Volver</a>
+
+
+<div class="table-wrapped">
+    <table class="table table-light table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    Descripcion
+                </th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody  class="table-group-divider">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.descripcion)
+                    </td>
+
+                    <td>
+
+                        <a asp-action="Delete" class="btn-generales btn-danger" asp-route-id="@item.IdAptitudes" asp-route-name="@item.IdPuesto">Eliminar</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

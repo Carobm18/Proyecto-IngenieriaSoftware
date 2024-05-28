@@ -1,0 +1,68 @@
+﻿@model SIERRHH.Models.Aptitudes
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    body {
+        background-image: url('/img/Fondo11.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+
+<div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Crear aptitudes</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group mt-2">
+                        <label asp-for="Descripcion" class="control-label">Descripción</label>
+                        <input asp-for="Descripcion" class="form-control" />
+                        <span asp-validation-for="Descripcion" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label asp-for="Puntaje" class="control-label"></label>
+                        <input asp-for="Puntaje" class="form-control" />
+                        <span asp-validation-for="Puntaje" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label asp-for="Estado" class="control-label"></label>
+
+                        <select asp-for="Estado" class="form-control">
+                            <option selected value="">Seleccione un estado...</option>
+                            <option value="Activo">Activo</option>
+                            <option value="Inactivo">Inactivo</option>
+                        </select>
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="submit" value="Crear" class="btn btn-success" />
+                        <a class="btn btn-primary mt-2" asp-action="Index">Volver</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+       
+    </div>
+    <div class="col-md"></div>
+    
+</div>
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

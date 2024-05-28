@@ -1,0 +1,47 @@
+﻿@model SIERRHH.Models.PuestoAptitudes
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<style>
+    body {
+        background-image: url('/img/Fondo11.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+
+<div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-4">
+
+        <div class="card">
+            <div class="card-header">
+                <h5>Editar aptitud</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="IdAptitudes" />
+                    <input type="hidden" asp-for="IdPuesto" />
+                    <div class="form-group mt-3">
+                        <input type="submit" value="Guardar" class="btn btn-success" />
+                        <a class="btn btn-primary" asp-action="Index">Volver</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+       
+    </div>
+    <div class="col-md"></div>
+    
+
+    
+</div>
+

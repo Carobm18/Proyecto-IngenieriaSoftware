@@ -1,0 +1,69 @@
+﻿@model SIERRHH.Models.Certificacion
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<style>
+    body {
+        background-image: url('/img/Fondo15.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Editar certificación</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="IdCertificado" />
+                    <div class="form-group">
+                        <label asp-for="IdEmpleado" class="control-label"></label>
+                        <input asp-for="IdEmpleado" class="form-control" />
+                        <span asp-validation-for="IdEmpleado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NombreCertificacion" class="control-label"></label>
+                        <input asp-for="NombreCertificacion" class="form-control" />
+                        <span asp-validation-for="NombreCertificacion" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label asp-for="Entidad" class="control-label"></label>
+                        <input asp-for="Entidad" class="form-control" />
+                        <span asp-validation-for="Entidad" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label asp-for="IdSector" class="control-label">Sector</label>
+                        <select asp-for="IdSector" class="form-control">
+                            <option value="">Seleccione un sector...</option>
+                            @foreach (var sector in ViewBag.Sectores)
+                            {
+                                <option value="@sector.IdSector">@sector.NombreSector</option>
+                            }
+                        </select>
+                        <span asp-validation-for="IdSector" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="submit" value="Guardar" class="btn btn-primary" />
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
