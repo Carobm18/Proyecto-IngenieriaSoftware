@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luisj\\ProyectoOriginal\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {}
+    "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luisj\\ProyectoOriginal\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {
+    "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisj\\ProyectoOriginal\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
+        "projectUniqueName": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
         "projectName": "SIERRHH",
-        "projectPath": "C:\\Users\\luisj\\ProyectoOriginal\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
+        "projectPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
         "packagesPath": "C:\\Users\\luisj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisj\\ProyectoOriginal\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH\\obj\\",
+        "outputPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

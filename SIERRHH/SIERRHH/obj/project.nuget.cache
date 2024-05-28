@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xHjWw5A3tEiA6vKCmRr0u99AHg5x1kFpGcfO+rE2AmfQxjgcgbtjSq6iIS0ffaTOLQXQ+axTnNEg5ROk6VhLbA==",
+  "dgSpecHash": "9d+gLk+ZoVKNyPA5PkVBoY0uEwZImiK4tt/qbvLy6JJRyiDp4/HbKdh/KMhpZTO2y016aHYGGc/Z4rJFkCyHYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luisj\\ProyectoOriginal\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
+  "projectFilePath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luisj\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\luisj\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
