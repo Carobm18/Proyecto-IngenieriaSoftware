@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilprofesional\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\usuarioempleado\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\usuarioempleado\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\usuarioempleado\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\usuarioempleado\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilprofesional\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MiPerfil.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilProfesional\\MiPerfil.cshtml",
@@ -40,6 +44,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-26T02:56:18.164Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilProfesional\\Index.cshtml",
+              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Index.cshtml",
+              "RelativeToolTip": "SIERRHH\\Views\\PerfilProfesional\\Index.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T04:18:52.569Z",
               "EditorCaption": ""
             },
             {
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\UsuarioEmpleado\\Login.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\UsuarioEmpleado\\Login.cshtml",
@@ -89,12 +106,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\UsuarioEmpleado\\Edit.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\UsuarioEmpleado\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\UsuarioEmpleado\\Edit.cshtml*",
-              "RelativeToolTip": "SIERRHH\\Views\\UsuarioEmpleado\\Edit.cshtml*",
+              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\UsuarioEmpleado\\Edit.cshtml",
+              "RelativeToolTip": "SIERRHH\\Views\\UsuarioEmpleado\\Edit.cshtml",
               "ViewState": "AQIAACEAAAAAAAAAAAAAAD0AAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-29T04:02:43.095Z",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\UsuarioEmpleado\\Create.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\UsuarioEmpleado\\Create.cshtml",
