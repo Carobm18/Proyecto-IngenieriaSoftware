@@ -27,7 +27,7 @@
 <p>
     @if (userIdEmpleado != null && Model.Any(m => m.IdEmpleado == userIdEmpleado))
     {
-        <a class="btn-generales btn-danger" asp-action="Create">Ir a crear títulos</a>
+        <a class="btn-generales btn-primary" asp-action="Create">Ir a crear títulos</a>
     }
     <a class="btn-generales btn-primary" asp-controller="PerfilProfesional" asp-action="MiPerfil">Volver</a>
 </p>

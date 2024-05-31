@@ -28,6 +28,12 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Descripcion)
                 </th>
+                 <th>
+                    @Html.DisplayNameFor(model => model.InformacionAdicional)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Salario)
+                </th>
                 <th>
                     Sector
                 </th>
@@ -49,6 +55,13 @@
                 <tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InformacionAdicional)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Salario)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.nombreSector)

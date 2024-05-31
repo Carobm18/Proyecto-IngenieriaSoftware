@@ -113,11 +113,25 @@
 
                             <a asp-controller="PerfilAptitudes" asp-action="Create" class="btn-generales btn-primary" asp-route-id="@Model.IdEmpleado">Agregar</a>
                             <a asp-controller="PerfilAptitudes" asp-action="Index" class="btn-generales btn-success mt-3" asp-route-id="@Model.IdEmpleado">Ver más</a>
-                            @foreach (var item in Model.listaAptitudes)
-                            {
-                                <li>@item.Descripcion</li>
+                            @{
+                                int contador = 0;
+                                @foreach (var item in Model.listaAptitudes)
+                                {
+                                    if(contador <3)
+                                    {
+                                        <li>@item.Descripcion</li>
+                                    }else{
+                                        <center>
+                                            <p>Ir a ver mas </p>
+                                        </center>
+                                       
+                                        break;
+                                    }
+                                    contador++;
+                                }
                             }
-
+                            
+                           
 
                         </div>
 

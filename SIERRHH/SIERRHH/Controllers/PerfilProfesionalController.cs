@@ -106,6 +106,7 @@ namespace SIERRHH.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion,Foto")] PerfilProfesional perfilProfesional)
         {
+            perfilProfesional.Foto = "";
             if (ModelState.IsValid)
             {
                 int idEmpleado = ObtenerIdEmpleadoAutenticado();

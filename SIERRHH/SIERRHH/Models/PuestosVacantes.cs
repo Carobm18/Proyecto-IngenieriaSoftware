@@ -8,6 +8,10 @@ namespace SIERRHH.Models
         public int IdPuesto { get; set; }
 
         public string Descripcion { get; set; }
+        
+        public string InformacionAdicional { get; set; }
+
+        public int Salario { get; set; }
 
         public int IdSector { get; set; }
 

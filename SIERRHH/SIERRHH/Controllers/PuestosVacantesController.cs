@@ -70,7 +70,7 @@ namespace SIERRHH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdPuesto,Descripcion,IdSector,Estado,FechaPublicacion,Modalidad")] PuestosVacantes puestosVacantes)
+        public async Task<IActionResult> Create([Bind("IdPuesto,Descripcion,InformacionAdicional,Salario,IdSector,Estado,FechaPublicacion,Modalidad")] PuestosVacantes puestosVacantes)
         {
             if (ModelState.IsValid)
             {
@@ -103,7 +103,7 @@ namespace SIERRHH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdPuesto,Descripcion,IdSector,Estado,FechaPublicacion,Modalidad")] PuestosVacantes puestosVacantes)
+        public async Task<IActionResult> Edit(int id, [Bind("IdPuesto,Descripcion,InformacionAdicional,Salario,IdSector,Estado,FechaPublicacion,Modalidad")] PuestosVacantes puestosVacantes)
         {
             if (id != puestosVacantes.IdPuesto)
             {

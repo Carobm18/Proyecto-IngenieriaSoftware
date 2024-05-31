@@ -9,6 +9,11 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .form-container {
+        height: 500px; /* Ajusta la altura según tus necesidades */
+        overflow-y: auto;
+    }
 </style>
 
 
@@ -16,7 +21,7 @@
     <div class="col-md-4">
         <h1>Crea tu perfil profesional</h1>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 form-container" >
 
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
