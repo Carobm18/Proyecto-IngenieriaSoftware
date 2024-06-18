@@ -15,10 +15,11 @@ namespace SIERRHH.Controllers
     public class UsuarioEmpleadoController : Controller
     {
         private readonly AppBdContext _context;
-
+        private  static string correoCambio;
         public UsuarioEmpleadoController(AppBdContext context)
         {
             _context = context;
+            
         }
 
         // GET: UsuarioEmpleadoes
@@ -226,11 +227,128 @@ namespace SIERRHH.Controllers
 
         }
 
-
+        [HttpGet]
         public IActionResult RecuperarUsuario()
         {
             return View();
         }
+
+        // Método de acción para procesar el formulario de recuperación de usuario
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult RecuperarUsuario(Correo pCorreo)
+        {
+            if (ModelState.IsValid)
+            {
+                var temp = _context.UsuarioEmpleado
+                   .FirstOrDefault(m => m.Correo == pCorreo.correo);
+                if (temp == null)
+                {
+                    TempData["Mensaje"] = "Los correos no conciden";
+                    return View();
+                }
+
+                var nuevaClave = GenerarClave();
+
+               temp.Password = nuevaClave;
+
+
+                _context.UsuarioEmpleado.Update(temp);
+                _context.SaveChangesAsync();
+
+                correoCambio = temp.Correo;
+                EnviarEmail(pCorreo,temp.Password);
+                return RedirectToAction("RestablecerPassword");
+            }
+            return View(pCorreo);
+        }
+        private string GenerarClave()
+        {
+            Random random = new Random();
+            string clave = string.Empty;
+            clave = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
+
+            //SE GENERA UNA CLAVE TEMPORAL
+            return new string(Enumerable.Repeat(clave, 12).Select(s => s[random.Next(s.Length)]).ToArray());
+        }//CIERRE GENERAR CLAVE
+
+
+        private async Task<bool> EnviarEmail(Correo pCorreo, string pass)
+        {
+            try
+            {
+                //variable control 
+                bool enviado = false;
+                
+
+                //ser instancia el objeto 
+                Email email = new Email();
+
+                //se utiliza el metodo para enviar el email
+                email.EnviarPassword(pCorreo,pass);
+
+                //se indica que se envio 
+                enviado = true;
+
+                //enviamos el valor 
+                return enviado;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }//cierre enviar email
+
+
+        public IActionResult RestablecerPassword()
+        {
+
+            var pRestablecer = new SeguridadRestablecer();
+            pRestablecer.Correo = correoCambio;
+
+            return View(pRestablecer);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult RestablecerPassword(SeguridadRestablecer pSeguridad)
+        {
+            if (ModelState.IsValid)
+            {
+                var temp = _context.UsuarioEmpleado
+                   .FirstOrDefault(m => m.Correo == pSeguridad.Correo);
+                if (temp == null)
+                {
+                    TempData["Mensaje"] = "Los correos no conciden";
+                    return View();
+                }
+
+                if (temp.Password == pSeguridad.Password)
+                {
+                    if (pSeguridad.NuevoPassword == pSeguridad.Confirmar)
+                    {
+                       
+                        temp.Password = pSeguridad.NuevoPassword;
+                        _context.UsuarioEmpleado.Update(temp);
+                        _context.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        TempData["Mensaje"] = "Las contraseñas no conciden";
+                    }
+
+                }
+                else
+                {
+                    TempData["Mensaje"] = "Contraseña temporal incorrecta";
+                }
+
+                return RedirectToAction("Login", "UsuarioEmpleado");
+            }
+            return View(pSeguridad);
+
+        }
+
 
         private UsuarioEmpleado ValidarUsuario(UsuarioEmpleado temp)
         {
