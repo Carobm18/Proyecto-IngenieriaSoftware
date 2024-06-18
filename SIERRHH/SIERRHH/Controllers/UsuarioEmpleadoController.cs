@@ -78,11 +78,14 @@ namespace SIERRHH.Controllers
             }
 
             var usuarioEmpleado = await _context.UsuarioEmpleado.FindAsync(id);
+
+            var usuario = usuarioEmpleado;
+           
             if (usuarioEmpleado == null)
             {
                 return NotFound();
             }
-            return View(usuarioEmpleado);
+            return View(usuario);
         }
 
         // POST: UsuarioEmpleadoes/Edit/5
@@ -101,6 +104,7 @@ namespace SIERRHH.Controllers
             {
                 try
                 {
+                  
                     _context.Update(usuarioEmpleado);
                     await _context.SaveChangesAsync();
                 }

@@ -14,7 +14,7 @@ namespace SIERRHH.Controllers
     public class PerfilProfesionalController : Controller
     {
         private readonly AppBdContext _context;
-
+        private string fotoAnterior = "";
         public PerfilProfesionalController(AppBdContext context)
         {
             _context = context;
@@ -80,11 +80,11 @@ namespace SIERRHH.Controllers
         // GET: PerfilProfesional/Create
         public IActionResult Create()
         {
-           PerfilProfesional perfilProfesional = new PerfilProfesional();
 
-            perfilProfesional.Foto = "";
+            PerfilProfesional perfil = new PerfilProfesional();
+            perfil.Foto = "a";
 
-            return View(perfilProfesional);
+            return View(perfil);
         }
 
         private int ObtenerIdEmpleadoAutenticado()
@@ -106,16 +106,16 @@ namespace SIERRHH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(List<IFormFile> files, [Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion")] PerfilProfesional perfilProfesional)
+        public async Task<IActionResult> Create(List<IFormFile> files, [Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion,Foto")] PerfilProfesional perfilProfesional)
         {
-            perfilProfesional.Foto = "";
+            perfilProfesional.Foto = "a";
             if (ModelState.IsValid)
             {
                 int idEmpleado = ObtenerIdEmpleadoAutenticado();
 
                perfilProfesional.IdEmpleado = idEmpleado;
 
-                string filePath = @"wwwroot\css\img\";
+                string filePath = @"wwwroot\img\";
                 string fileName = "";
 
                 foreach (var formFile in files)//recorrer una lista de objetos files
@@ -137,7 +137,7 @@ namespace SIERRHH.Controllers
                             await formFile.CopyToAsync(stream);//espera a que copie
 
                             //Ahora le indicamos en nustro db donde esta la foto
-                            perfilProfesional.Foto = @"/css/img/" + fileName;
+                            perfilProfesional.Foto = @"/img/" + fileName;
                         }//cierre del using
                     }//cierre if
                 }//cierre del foreach
@@ -168,12 +168,17 @@ namespace SIERRHH.Controllers
             {
                 return NotFound();
             }
-
+           
+           
+                
+               
+            
             var perfilProfesional = await _context.PerfilProfesional.FindAsync(id);
             if (perfilProfesional == null)
             {
                 return NotFound();
             }
+            fotoAnterior = perfilProfesional.Foto;
             return View(perfilProfesional);
         }
 
@@ -182,7 +187,7 @@ namespace SIERRHH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion,Foto")] PerfilProfesional perfilProfesional)
+        public async Task<IActionResult> Edit(List<IFormFile> files, int id, [Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion,Foto")] PerfilProfesional perfilProfesional)
         {
             if (id != perfilProfesional.IdEmpleado)
             {
@@ -193,6 +198,42 @@ namespace SIERRHH.Controllers
             {
                 try
                 {
+                    //se toma la ruta para borrar la foto
+                    string filePath = @"wwwroot" + fotoAnterior;
+
+                    if (files.Count > 0)
+                    {
+                        //Se borra la foto anterior del libro
+                        this.BorrarFoto(filePath);
+                    }
+
+
+                    string fileName = @"";
+                    filePath = @"wwwroot\img\";
+
+                    //se revisan los archivos adjuntos
+                    foreach (var item in files)
+                    {
+                        if (item.Length > 0)
+                        {
+                            //se construye el nombre de la foto
+                            fileName = perfilProfesional.IdEmpleado + "" + item.FileName;
+                            //se reemplazan los espacios en blanco
+                            fileName = fileName.Replace(" ", "");
+                            //se reemplazan los #
+                            fileName = fileName.Replace("#", "_");
+                            //ruta fisica donde se almacena la foto
+                            filePath += fileName;
+
+                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            {
+                                //se sube la foto y copia dentro del folder IMG
+                                await item.CopyToAsync(stream);
+
+                                perfilProfesional.Foto = @"/img/" + fileName;
+                            }//cierre using
+                        }//cierre if
+                    }//cierre foreach
                     _context.Update(perfilProfesional);
                     await _context.SaveChangesAsync();
                 }
@@ -212,9 +253,22 @@ namespace SIERRHH.Controllers
             return View(perfilProfesional);
         }
 
-     
+        private void BorrarFoto(string pFileName)
+        {
 
-      
+            try
+            {
+                System.IO.File.Delete(pFileName);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+
+
+
 
         private bool PerfilProfesionalExists(int id)
         {

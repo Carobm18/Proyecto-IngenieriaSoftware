@@ -21,8 +21,8 @@ namespace SIERRHH.Models
 
         public string Foto { get; set; }
 
-        public string Imagen = "";
-
+        public string imagen = "";
+     
         public List<Aptitudes> listaAptitudes = new List<Aptitudes>();
 
         public List<Titulos> listaTitulos = new List<Titulos>();
