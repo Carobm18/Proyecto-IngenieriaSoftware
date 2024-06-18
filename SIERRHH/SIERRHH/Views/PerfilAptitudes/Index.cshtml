@@ -9,6 +9,16 @@
     int? userIdEmpleado = userClaims != null ? Convert.ToInt32(userClaims.Value) : null;
 }
 
+<style>
+    body {
+        background-image: url('/img/Fondo15.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<h5>Aptitudes del Perfil</h5>
+
 <a  class="btn-generales btn-primary" asp-controller="PerfilProfesional" asp-action="MiPerfil">Volver</a>
 
 <div class="table-wrapped">

@@ -108,7 +108,7 @@ namespace SIERRHH.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(List<IFormFile> files, [Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion,Foto")] PerfilProfesional perfilProfesional)
         {
-            perfilProfesional.Foto = "a";
+            perfilProfesional.Foto = "/img/ejemplofoto.jpg";
             if (ModelState.IsValid)
             {
                 int idEmpleado = ObtenerIdEmpleadoAutenticado();

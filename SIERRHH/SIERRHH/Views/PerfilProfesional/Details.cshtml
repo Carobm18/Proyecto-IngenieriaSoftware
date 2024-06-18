@@ -107,7 +107,7 @@
                         </center>
                     </div>
                     <div class="card-body">
-                        <a asp-controller="PerfilAptitudes" asp-action="Index" class="btn-generales btn-success mt-3" asp-route-id="@Model.IdEmpleado">Ver más</a>
+                    
                         @foreach (var item in Model.listaAptitudes)
                         {
                             <li>@item.Descripcion</li>
@@ -132,7 +132,7 @@
                             </div>
                             <div class="card-body">
 
-                                <a asp-controller="Titulos" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+                             
                                 <div class="table-wrapped">
                                     <table class="table table-light table-hover">
                                         <thead class="table-dark">
@@ -171,7 +171,7 @@
                             </div>
                             <div class="card-body">
 
-                                <a asp-controller="PuestosDesempenados" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+                              @*   <a asp-controller="PuestosDesempenados" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a> *@
                                 <div class="table-wrapped">
                                     <table class="table table-light table-hover">
                                         <thead class="table-dark">
@@ -217,7 +217,7 @@
                             </div>
                             <div class="card-body">
 
-                                <a asp-controller="Certificacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+                              
                                 <div class="table-wrapped">
                                     <table class="table table-light table-hover">
                                         <thead class="table-dark">
@@ -259,7 +259,7 @@
                             </div>
                             <div class="card-body">
 
-                                <a asp-controller="Capacitacion" asp-action="Index" class="btn-generales btn-success" asp-route-id="@Model.IdEmpleado">Ver más</a>
+                               
                                 <div class="table-wrapped">
                                     <table class="table table-light table-hover">
                                         <thead class="table-dark">

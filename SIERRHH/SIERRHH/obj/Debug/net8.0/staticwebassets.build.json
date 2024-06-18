@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SIFFzF3hQQCOavmYxPzsxcJLu2Q4JskwXpSwl9U9ag8=",
+  "Hash": "uFEBqjjp3Zc8K3fjCNBPAR4qy+yFvwdgU4KP+EnWWyQ=",
   "Source": "SIERRHH",
   "BasePath": "_content/SIERRHH",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\1gatoBotas.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img\\2imagenMario.jpg",
+      "SourceId": "SIERRHH",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\",
+      "BasePath": "_content/SIERRHH",
+      "RelativePath": "img/2imagenMario.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\2imagenMario.jpg"
     },
     {
       "Identity": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img\\ejemplofoto.jpg",
@@ -300,25 +319,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\RH4.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img1gatoBotas.jpg",
-      "SourceId": "SIERRHH",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\",
-      "BasePath": "_content/SIERRHH",
-      "RelativePath": "img1gatoBotas.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img1gatoBotas.jpg"
     },
     {
       "Identity": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\js\\site.js",

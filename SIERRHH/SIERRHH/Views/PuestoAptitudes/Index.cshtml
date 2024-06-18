@@ -3,12 +3,18 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    body {
+        background-image: url('/img/Fondo15.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
 
-<h5>Puestos Vacantes</h5>
+<h5>Aptitudes del puesto</h5>
 
 <hr/>
-
-<a class="btn-primary btn-generales" asp-controller="" asp-action="">Volver</a>
+<a asp-controller="PuestosVacantes" class="btn-generales btn-primary" asp-area="" asp-action="Details" asp-route-id="@Model.FirstOrDefault()?.IdPuesto">Volver</a>
 
 
 <div class="table-wrapped">

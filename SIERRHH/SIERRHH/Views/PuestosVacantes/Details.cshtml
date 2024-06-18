@@ -101,7 +101,13 @@
                     <div class="d-flex justify-content-center mt-3">
                         <div class=" w-75 d-flex justify-content-around">
                             <a asp-controller="PuestoAptitudes" asp-action="Create" class="btn btn-primary me-2" asp-route-id="@Model.IdPuesto">Agregar</a>
+                           
+                            @if(@Model.listaAptitudes != null && @Model.listaAptitudes.Any()){
                             <a asp-controller="PuestoAptitudes" asp-action="Index" class="btn btn-success " asp-route-id="@Model.IdPuesto">Ver más</a>
+                            }
+
+                           
+
                         </div>
                     </div>
                         }

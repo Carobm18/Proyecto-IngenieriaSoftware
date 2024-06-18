@@ -13,12 +13,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img1gatoBotas.jpg",
-      "PackagePath": "staticwebassets\\img1gatoBotas.jpg"
-    },
-    {
       "Id": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img\\1gatoBotas.jpg",
       "PackagePath": "staticwebassets\\img\\1gatoBotas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img\\2imagenMario.jpg",
+      "PackagePath": "staticwebassets\\img\\2imagenMario.jpg"
     },
     {
       "Id": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\wwwroot\\img\\Fondo11.jpg",
