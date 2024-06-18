@@ -67,12 +67,46 @@ namespace SIERRHH.Controllers
             _context.GanadorConcursos.Add(ganador);
             _context.SaveChanges();
 
-            
+            var usuarioEmpleado =  _context.UsuarioEmpleado.FirstOrDefault(m => m.IdEmpleado == ganador.IdEmpleado);
+
+            var perfilProfesional = _context.PerfilProfesional.FirstOrDefault(m => m.IdEmpleado == ganador.IdEmpleado);
+
+
+            var correo = usuarioEmpleado.Correo;
+            var nombreCompleto = perfilProfesional.Nombre + " " + perfilProfesional.Apellido;
+
+            EnviarEmail(correo, nombreCompleto, puesto.Descripcion);
 
             return RedirectToAction("Index", "PuestosVacantes");
 
             
         }
+
+        private async Task<bool> EnviarEmail(String correo, string nombre, String puesto)
+        {
+            try
+            {
+                //variable control 
+                bool enviado = false;
+
+
+                //ser instancia el objeto 
+                Email email = new Email();
+
+                //se utiliza el metodo para enviar el email
+                email.EnviarCorreoConcurso(correo, nombre, puesto);
+
+                //se indica que se envio 
+                enviado = true;
+
+                //enviamos el valor 
+                return enviado;
+            }
+            catch (Exception )
+            {
+                return false;
+            }
+        }//cierre enviar email
 
         private List<Concurso> obtenerConcursante(int idPuesto, int idEmpleado)
         {

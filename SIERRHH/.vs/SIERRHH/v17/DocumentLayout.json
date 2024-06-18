@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
+  "WorkspaceRootPath": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\puestoaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\puestoaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\carolina\\archivospesados\\ingenieria s\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\perfilaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\perfilaptitudes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\carolina\\archivospesados\\ingenieria s\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\ganadorconcursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\ganadorconcursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\grado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\grado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\views\\puestosvacantes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\views\\puestosvacantes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\luisj\\repositorioingenieria\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\usuarioempleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\carolina\\archivospesados\\ingenieria s\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\controllers\\usuarioempleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\controllers\\usuarioempleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|c:\\users\\carolina\\archivospesados\\ingenieria s\\proyecto-ingenieriasoftware\\sierrhh\\sierrhh\\models\\perfilprofesional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BC4FBF-D47D-4DF9-91A5-2EF5854DF57C}|SIERRHH\\SIERRHH.csproj|solutionrelative:sierrhh\\models\\perfilprofesional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,92 +61,60 @@
               "Name": "ST:0:0:{f5cd1b51-c771-5648-966f-646d419b1e7c}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Grado\\Index.cshtml",
-              "RelativeDocumentMoniker": "SIERRHH\\Views\\Grado\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\Grado\\Index.cshtml",
-              "RelativeToolTip": "SIERRHH\\Views\\Grado\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T17:03:43.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
-              "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml*",
-              "RelativeToolTip": "SIERRHH\\Views\\PerfilAptitudes\\Index.cshtml*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T17:01:58.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PuestoAptitudes\\Index.cshtml",
-              "RelativeDocumentMoniker": "SIERRHH\\Views\\PuestoAptitudes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PuestoAptitudes\\Index.cshtml*",
-              "RelativeToolTip": "SIERRHH\\Views\\PuestoAptitudes\\Index.cshtml*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T17:01:50.892Z",
+              "Title": "UsuarioEmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
+              "RelativeDocumentMoniker": "SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
+              "ToolTip": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
+              "RelativeToolTip": "SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
+              "ViewState": "AQIAAAABAAAAAAAAAAAqwCsBAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T17:52:45.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PuestosVacantes\\Details.cshtml",
-              "RelativeDocumentMoniker": "SIERRHH\\Views\\PuestosVacantes\\Details.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PuestosVacantes\\Details.cshtml",
-              "RelativeToolTip": "SIERRHH\\Views\\PuestosVacantes\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGgAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T16:54:39.64Z",
+              "Title": "PerfilProfesional.cs",
+              "DocumentMoniker": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\PerfilProfesional.cs",
+              "RelativeDocumentMoniker": "SIERRHH\\Models\\PerfilProfesional.cs",
+              "ToolTip": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\PerfilProfesional.cs",
+              "RelativeToolTip": "SIERRHH\\Models\\PerfilProfesional.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T17:36:21.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PerfilProfesionalController.cs",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilProfesionalController.cs",
-              "RelativeDocumentMoniker": "SIERRHH\\Controllers\\PerfilProfesionalController.cs",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\PerfilProfesionalController.cs",
-              "RelativeToolTip": "SIERRHH\\Controllers\\PerfilProfesionalController.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAowG4AAAA6AAAA",
+              "DocumentIndex": 0,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\Email.cs",
+              "RelativeDocumentMoniker": "SIERRHH\\Models\\Email.cs",
+              "ToolTip": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Models\\Email.cs",
+              "RelativeToolTip": "SIERRHH\\Models\\Email.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAYwIEAAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T16:23:11.712Z",
+              "WhenOpened": "2024-06-18T17:31:40.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioEmpleadoController.cs",
-              "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
-              "RelativeDocumentMoniker": "SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
-              "RelativeToolTip": "SIERRHH\\Controllers\\UsuarioEmpleadoController.cs",
-              "ViewState": "AQIAADcBAAAAAAAAAAAMwD8BAAAhAAAA",
+              "DocumentIndex": 1,
+              "Title": "GanadorConcursoController.cs",
+              "DocumentMoniker": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\GanadorConcursoController.cs",
+              "RelativeDocumentMoniker": "SIERRHH\\Controllers\\GanadorConcursoController.cs",
+              "ToolTip": "C:\\Users\\carolina\\ArchivosPesados\\Ingenieria S\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Controllers\\GanadorConcursoController.cs",
+              "RelativeToolTip": "SIERRHH\\Controllers\\GanadorConcursoController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAswD4AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T05:44:43.862Z",
+              "WhenOpened": "2024-06-18T17:26:54.051Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 16,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

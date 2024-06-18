@@ -67,5 +67,76 @@ namespace SIERRHH.Models
             email.Dispose();
             smtp.Dispose();
         }
+
+        public void EnviarCorreoConcurso(String correo, String nombreCompleto, String puesto)
+        {
+            // Se crea una instancia del objeto email
+            MailMessage email = new MailMessage();
+
+            // Asunto
+            email.Subject = "¡Felicitaciones! Ha ganado el concurso para el puesto";
+
+            // Destinatarios
+            email.To.Add(new MailAddress("sierrhh2024@outlook.com"));
+            email.To.Add(new MailAddress(correo));
+
+            // Emisor del correo 
+            email.From = new MailAddress("sierrhh2024@outlook.com");
+
+            // Se construye la vista HTML para el body del email
+            string html = "<h1 style='color:#1E90FF;'>¡Felicidades!</h1>";
+            html += "<p>Estimado/a <b>" + nombreCompleto + "</b>,</p>";
+            html += "<p>Nos complace informarle que ha sido seleccionado/a como el/la ganador/a del concurso para el puesto en nuestra empresa.</p>";
+            html += "<p>Queremos agradecerle por su participación y el esfuerzo demostrado durante el proceso de selección.</p>";
+            html += "<p>A continuación, le brindamos el nombre del puesto:</p>";
+            html += "<ul>";
+            html += "<li><b>Puesto:</b> " + puesto + "</li>";
+            html += "</ul>";
+            html += "<p>Por favor, contactese con recursos humanos al numero 8888-8888 o ir a la oficina para mas información.</p>";
+            html += "<p>¡Esperamos verle pronto!</p>";
+            html += "<p style='color:#1E90FF;'><b>Saludos cordiales,</b></p>";
+            html += "<p>Equipo de Recursos Humanos</p>";
+            html += "<p><i>Nota: No responda a este correo ya que fue generado automáticamente por nuestra plataforma SIERRHH.</i></p>";
+
+            // Se indica que el contenido es HTML
+            email.IsBodyHtml = true;
+
+            // Se indica la prioridad recomendación debe ser prioridad normal 
+            email.Priority = MailPriority.Normal;
+
+            // Se instancia la vista del HTML para el campo del body del email
+            AlternateView view = AlternateView.CreateAlternateViewFromString(html,
+                Encoding.UTF8, MediaTypeNames.Text.Html);
+
+            // Se agrega la vista HTML al cuerpo del email 
+            email.AlternateViews.Add(view);
+
+            // Configuración del protocolo de comunicación SMTP 
+            SmtpClient smtp = new SmtpClient();
+
+            // Servidor de correo a implementar 
+            smtp.Host = "smtp-mail.outlook.com";
+
+            // Puerto de comunicación 
+            smtp.Port = 587;
+
+            // Se indica si el buzón utiliza seguridad tipo SSL 
+            smtp.EnableSsl = true;
+
+            // Se indica si el buzón utiliza credenciales por default
+            smtp.UseDefaultCredentials = false;
+
+            // Se asignan los datos para las credenciales 
+            smtp.Credentials = new NetworkCredential("sierrhh2024@outlook.com", "SIERRHHLCJHAV@");
+
+            // Método para enviar el email
+            smtp.Send(email);
+
+            email.Dispose();
+            smtp.Dispose();
+        }
+
+
+
     }
 }
