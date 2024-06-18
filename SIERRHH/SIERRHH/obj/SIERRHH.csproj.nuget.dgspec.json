@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {}
+    "C:\\Users\\josse\\INGProyecto\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {
+    "C:\\Users\\josse\\INGProyecto\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
+        "projectUniqueName": "C:\\Users\\josse\\INGProyecto\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
         "projectName": "SIERRHH",
-        "projectPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
-        "packagesPath": "C:\\Users\\luisj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\",
+        "projectPath": "C:\\Users\\josse\\INGProyecto\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\SIERRHH.csproj",
+        "packagesPath": "C:\\Users\\josse\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josse\\INGProyecto\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\luisj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\josse\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

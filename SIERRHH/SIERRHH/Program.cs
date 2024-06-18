@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +16,11 @@ builder.Services.AddAuthentication("CookieAuthentication").AddCookie("CookieAuth
 builder.Services.AddDbContext<SIERRHH.Models.AppBdContext>(
  options => options.UseSqlServer(builder.Configuration.GetConnectionString("Stringconexion")));
 
-
+// Configure options for file uploads
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 104857600; // 100 MB, ajusta según tus necesidades
+});
 
 var app = builder.Build();
 

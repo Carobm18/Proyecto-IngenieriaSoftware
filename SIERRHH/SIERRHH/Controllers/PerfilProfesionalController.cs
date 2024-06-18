@@ -80,9 +80,11 @@ namespace SIERRHH.Controllers
         // GET: PerfilProfesional/Create
         public IActionResult Create()
         {
-           
+           PerfilProfesional perfilProfesional = new PerfilProfesional();
 
-            return View();
+            perfilProfesional.Foto = "";
+
+            return View(perfilProfesional);
         }
 
         private int ObtenerIdEmpleadoAutenticado()
@@ -104,7 +106,7 @@ namespace SIERRHH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion,Foto")] PerfilProfesional perfilProfesional)
+        public async Task<IActionResult> Create(List<IFormFile> files, [Bind("IdEmpleado,Nombre,Apellido,Telefono,Direccion,FechaNacimiento,Descripcion")] PerfilProfesional perfilProfesional)
         {
             perfilProfesional.Foto = "";
             if (ModelState.IsValid)
@@ -112,7 +114,35 @@ namespace SIERRHH.Controllers
                 int idEmpleado = ObtenerIdEmpleadoAutenticado();
 
                perfilProfesional.IdEmpleado = idEmpleado;
-               
+
+                string filePath = @"wwwroot\css\img\";
+                string fileName = "";
+
+                foreach (var formFile in files)//recorrer una lista de objetos files
+                {
+                    //se valida el tamano drl archivo
+                    if (formFile.Length > 0)
+                    {
+                        //se construye el nombre de la foto
+                        fileName = perfilProfesional.IdEmpleado + "_" + formFile.FileName;
+
+                        //Se quitan los espacios en blanco dentro de la foto
+                        fileName = fileName.Replace(" ", "_");
+
+                        //se inicia la ruta fisica donde se almacena la foto
+                        filePath += fileName;
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            //se copia la foto en nustra app
+                            await formFile.CopyToAsync(stream);//espera a que copie
+
+                            //Ahora le indicamos en nustro db donde esta la foto
+                            perfilProfesional.Foto = @"/css/img/" + fileName;
+                        }//cierre del using
+                    }//cierre if
+                }//cierre del foreach
+
+
                 _context.Add(perfilProfesional);
                 await _context.SaveChangesAsync();
                 this.cambiarEstadoUsuario(idEmpleado);
