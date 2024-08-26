@@ -10,15 +10,29 @@
         background-repeat: no-repeat;
     }
 
-  
 
     .custom-card {
-       
         height: 300px;
         border: 1px solid #ccc;
         border-radius: 5px;
         margin-bottom: 20px;
     }
+
+    /* Asegurar que el contenedor de la foto tenga la misma altura */
+    .photo-card {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .photo-card img {
+            max-height: 100%;
+            max-width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
 
 </style>
 
@@ -82,21 +96,22 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md">
-                <div class="card">
+
+            <div class="col-md-6">
+                <div class="card photo-card">
                     <div class="card-header">
                         <center>
                             Foto de usuario
                         </center>
                     </div>
                     <div class="card-body">
-
                         <center>
-                            <img src="@Model.Foto" alt="Foto de perfil" class="img-fluid rounded-circle" width="200" />
+                            <img src="@Model.Foto" alt="Foto de perfil" class="img-fluid" />
                         </center>
-
                     </div>
                 </div>
+            </div>
+
 
             </div>
             <div class="col-md">
