@@ -58,9 +58,9 @@
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
               "RelativeDocumentMoniker": "SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
-              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
-              "RelativeToolTip": "SIERRHH\\Views\\PerfilProfesional\\Details.cshtml",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAmwHEAAAAAAAAA",
+              "ToolTip": "C:\\Users\\luisj\\RepositorioIngenieria\\Proyecto-IngenieriaSoftware\\SIERRHH\\SIERRHH\\Views\\PerfilProfesional\\Details.cshtml*",
+              "RelativeToolTip": "SIERRHH\\Views\\PerfilProfesional\\Details.cshtml*",
+              "ViewState": "AQIAABUBAAAAAAAAAADwvy8BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-26T01:13:44.554Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "SIERRHH\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-19T05:11:58.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:11:58.334Z"
             }
           ]
         },
